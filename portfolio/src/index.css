@@ -1,0 +1,43 @@
+:root {
+  --sub-font: "jovie", sans-serif;
+  --font-weight-regular: 400;
+  --main-font: "neue-haas-grotesk-display", sans-serif;
+
+}
+
+body {
+  font-family: var(--main-font);
+  font-weight: var(--font-weight-regular);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  padding: 0 2rem;
+}
+
+section {
+  max-width: 1500px;
+}
+h1 {
+  font-size: 4rem;
+  font-family: var(--sub-font);
+  font-weight: var(--font-weight-regular);
+}
+
+.highlight {
+  font-family: var(--sub-font);
+  font-size: 2rem;
+
+}
+
+.main-heading {
+  max-width: 650px;
+}
+
+.hero-container {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
