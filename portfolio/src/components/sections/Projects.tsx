@@ -21,7 +21,7 @@ const Projects = () => {
   return (
     <section id="projects">
         <h2 className="text-heading">All my works</h2>
-        <div>
+        <div className="flex flex-wrap gap-xs mt-sm mb-md">
             <button 
             onClick={() => setSelected([])}
             aria-pressed={selected.length === 0}

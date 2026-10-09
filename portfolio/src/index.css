@@ -65,16 +65,19 @@
     bottom: 0;
     height: 4px;
     width: 100%;
-    border-radius: 9999px;
-    background-color: var(--color-dark);
+
+    background-color: var(--color-accent);
     transform: scaleX(0);
-    transform-origin: underneath;
-   
+    transform-origin: left;
+    transition: transform 0.2s ease;
   }
 
   &:hover::after,
   &[aria-pressed="true"]::after {
     transform: scaleX(1);
+  }
+  &[aria-pressed="true"] {
+    font-weight: var(--font-weight-medium);
   }
 }
 
