@@ -9,8 +9,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <Projects />
+      <main className="flex flex-col gap-section">
+        <Hero />
+        <Projects />
+      </main>
 
     </>
   );
