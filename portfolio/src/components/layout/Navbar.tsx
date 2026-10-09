@@ -1,13 +1,28 @@
-import React from 'react'
+import GithubIcon from "../../assets/icons/GithubIcon"
+import LinkedinIcon from "../../assets/icons/LinkedinIcon"
+import "../../assets/styles/Navbar.css"
 
 const Navbar = () => {
   return (
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav className="navbar-container">
+        <div className="logo">
+            <img src="/src/assets/logo.png" alt="Logo" />
+        </div>
+        <div className="navbar-right">
+            <ul className="navbar-links">
+                <li><a href="#projects">Projekt</a></li>
+                <li><a href="#about">Om mig</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+            <div className="social-icons">
+                <a href="https://www.linkedin.com/in/linas-vard/" target="_blank" rel="noopener noreferrer">
+                    <LinkedinIcon />
+                </a>
+                <a href="https://github.com/linasvard" target="_blank" rel="noopener noreferrer">
+                    <GithubIcon />
+                </a>
+            </div>
+        </div>
     </nav>
   )
 }
