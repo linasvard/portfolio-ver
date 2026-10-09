@@ -23,7 +23,7 @@ const Navbar = () => {
                 ))}
             </ul>
             <div className="social-icons">
-                <CvIcon className="cv-btn bg-dark text-light" />
+                <CvIcon />
             </div>
         </div>
     </nav>
