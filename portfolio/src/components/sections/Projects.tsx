@@ -19,7 +19,7 @@ const Projects = () => {
         ? projects : projects.filter((p) => p.categories.some((cat) => selected.includes(cat)));
 
   return (
-    <section id="projects">
+    <section className="py-section" id="projects">
         <h2 className="text-heading">All my works</h2>
         <div className="flex flex-wrap gap-xs mt-sm mb-md">
             <button 
