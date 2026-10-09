@@ -3,9 +3,9 @@ import HeroImg from "../../assets/images/hero-img.png";
 const Hero = () => {
   return (
     <section>
-        <div className="flex flex-col-reverse md:flex-row gap-md items-center justify-between">
+        <div className="hero-container flex flex-col-reverse md:flex-row gap-md items-center justify-between">
             <div> 
-                <h1 className="text-hero w-full max-w-3xl leading-tight">
+                <h1 className="text-hero w-full leading-tight">
                     <span className="block text-dark text-2xl">
                     <span className="font-bold">Hej, </span>Lina heter jag!
                     </span>
