@@ -2,6 +2,8 @@ import GithubIcon from "../../assets/icons/GithubIcon"
 import LinkedinIcon from "../../assets/icons/LinkedinIcon"
 import "../../assets/styles/Navbar.css"
 
+
+
 const Navbar = () => {
   return (
     <nav className="navbar-container">
@@ -16,10 +18,10 @@ const Navbar = () => {
             </ul>
             <div className="social-icons">
                 <a href="https://www.linkedin.com/in/linas-vard/" target="_blank" rel="noopener noreferrer">
-                    <LinkedinIcon />
+                    <LinkedinIcon className="social-icon" />
                 </a>
                 <a href="https://github.com/linasvard" target="_blank" rel="noopener noreferrer">
-                    <GithubIcon />
+                    <GithubIcon className="social-icon" />
                 </a>
             </div>
         </div>
