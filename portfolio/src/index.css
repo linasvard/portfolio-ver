@@ -6,7 +6,15 @@
   --font-sans-serif: "jovie", sans-serif;
   --font-weight-regular: 400;
   --font-sans: "neue-haas-grotesk-display", sans-serif;
-  
+  --font-weight-bold: 600;
+
+  /*Text sizes*/
+  --text-hero: 4.5rem;
+  --text-heading: 2rem;
+  --text-subheading: 1rem;
+  --text-body: 1rem;
+  --text-caption: 0.875rem;
+
   /*Color styles*/
   --color-light: #FDFAF5;
   --color-dark: #141015;
@@ -55,12 +63,9 @@ body {
 
 section {
   max-width: 1500px;
+  padding: 0 var(--spacing-md);
 }
-h1 { 
-  font-size: 4rem;
-  font-family: var(--font-sans-serif);
-  font-weight: var(--font-weight-regular);
-}
+
 
 .highlight {
   font-family: var(--font-sans-serif);
