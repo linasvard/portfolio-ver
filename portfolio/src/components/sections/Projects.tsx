@@ -1,4 +1,5 @@
 import { projects } from "../../data/projects"
+import ProjectCard from "../ui/ProjectCard"
 
 const Projects = () => {
   return (
@@ -6,11 +7,10 @@ const Projects = () => {
         <h2>My Projects</h2>
         <div className="projects-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-lg">
             {projects.map((project) => (
-                <div key={project.id}>
-                    <img src={project.image} alt={project.title} />
-                    <h3>{project.title}</h3>
-                    <p>{project.description}</p>
-                </div>
+                <ProjectCard key={project.id}
+                image={project.image}
+                title={project.title}
+                description={project.description} />
             ))}
         </div>
     </section>
