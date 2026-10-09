@@ -9,13 +9,13 @@ const ProjectCard = ({ image, title, categories, description, github, demo }) =>
              <div className="px-0 py-6 flex flex-col gap-xs">
                 <ul className="flex flex-wrap gap-xs">
                     {categories.map((cat) => (
-                        <li key="cat" className="bg-accent text-light px-2 py-1 rounded-md text-sm">
+                        <li key="cat" className="text-dark text-sm font-medium not-last:after:content-['/'] not-last:after:px-xs">
                             {cat}
                         </li>
                     ))}
                     
                 </ul>
-                <h3>{title}</h3>
+                <h3 className="text-subheading font-medium">{title}</h3>
                 <p>{description}</p>
                 <div>
                     {github && (

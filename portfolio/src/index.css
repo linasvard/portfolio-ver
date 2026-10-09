@@ -7,11 +7,12 @@
   --font-weight-regular: 400;
   --font-sans: "neue-haas-grotesk-display", sans-serif;
   --font-weight-bold: 600;
+  --font-weight-medium: 500;
 
   /*Text sizes*/
   --text-hero: 4.5rem;
   --text-heading: 2rem;
-  --text-subheading: 1rem;
+  --text-subheading: 1.75rem;
   --text-body: 1rem;
   --text-caption: 0.875rem;
 
@@ -59,6 +60,10 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   background-color: var(--color-light);
+}
+
+h2 {
+  font-weight: var(--font-weight-medium);
 }
 
 section {

@@ -18,7 +18,7 @@ const Hero = () => {
             </div>
         </div> 
         <div className="flex justify-left mt-lg">
-            <a href="#projects" className="link-underline text-dark text-lg font-semibold">
+            <a href="#projects" className="link-underline text-dark font-medium text-lg">
                 Se mina projekt nedan.
             </a>
         </div>      
