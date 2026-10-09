@@ -54,6 +54,30 @@
 
 }
 
+@utility filter-tab {
+  position: relative;
+  padding-bottom: 0.5rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-radius: 9999px;
+    background-color: var(--color-dark);
+    transform: scaleX(0);
+    transform-origin: underneath;
+   
+  }
+
+  &:hover::after,
+  &[aria-pressed="true"]::after {
+    transform: scaleX(1);
+  }
+}
+
 body {
   font-family: var(--font-sans-serif);
   font-weight: var(--font-weight-regular);

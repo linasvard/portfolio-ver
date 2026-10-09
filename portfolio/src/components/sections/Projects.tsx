@@ -21,11 +21,21 @@ const Projects = () => {
   return (
     <section id="projects">
         <h2 className="text-heading">All my works</h2>
-        <p>Valda: {selected.join(", ")}</p>
         <div>
-            <button onClick={() => setSelected([])}>Alla</button>
+            <button 
+            onClick={() => setSelected([])}
+            aria-pressed={selected.length === 0}
+            className="filter-tab"
+            >Alla</button>
             {allCategories.map((cat) => (
-                <button key={cat} onClick={() => handleCategoryClick(cat)}>{cat}</button>
+                <button 
+                key={cat} 
+                onClick={() => handleCategoryClick(cat)}
+                aria-pressed={selected.includes(cat)}
+                className="filter-tab"
+                >
+                    {cat}
+                </button>
             ))}
         </div>
         <div className="projects-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-md">
