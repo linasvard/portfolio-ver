@@ -10,10 +10,10 @@ export const projects = [
     },
     {
         id: 2,
-        image: "/src/assets/images/portfolio.png",
-        title: "Portfolio",
+        image: "/src/assets/images/the-library.jpg",
+        title: "the library.",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        categories: ["React", "TailwindCSS", "Vite"],
+        categories: ["MongoDB", "Fullstack", "API"],
         github: "https://github.com/linasvard/portfolio",
         demo: "https://linasvard.github.io/portfolio/"
     }
