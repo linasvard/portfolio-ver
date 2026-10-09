@@ -1,12 +1,4 @@
-.navbar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar-right,
-.social-icons,
-.navbar-links {
+.navbar-right {
   display: flex;
   align-items: center;
 }
@@ -21,5 +13,3 @@
   font-weight: 500;
   border-radius: 60px;
 }
-
-
