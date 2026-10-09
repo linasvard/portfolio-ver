@@ -1,4 +1,5 @@
 import HeroImg from "../../assets/images/hero-img.png";
+import Underline from "../ui/Underline";
 
 const Hero = () => {
   return (
@@ -9,7 +10,7 @@ const Hero = () => {
                     <span className="block text-dark text-2xl">
                     <span className="font-bold">Hej, </span>Lina heter jag!
                     </span>
-                    En multitasker som älskar design, webb och tillgänglighet.
+                    En{" "}<span className="relative inline-block isolate">multitasker<Underline className="text-accent"/></span>{" "} som älskar design, webb och tillgänglighet.
                 </h1>
             </div>
             <div className="flex justify-center md:justify-center w-full max-w-3xl">
