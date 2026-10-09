@@ -16,7 +16,12 @@ const Hero = () => {
             <div className="flex justify-center md:justify-center w-full max-w-3xl">
                 <img src={HeroImg} alt="Illustration av kvinna som sitter framför en dator" />
             </div>
-        </div>       
+        </div> 
+        <div className="flex justify-left mt-lg">
+            <a href="#projects" className="link-underline text-dark text-lg font-semibold">
+                Se mina projekt nedan.
+            </a>
+        </div>      
     </section>
   );
 };

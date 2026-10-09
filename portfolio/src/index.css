@@ -80,5 +80,5 @@ section {
 
 .hero-container {
 
-  min-height: calc(80vh - var(--spacing-navbar));
+  min-height: calc(75vh - var(--spacing-navbar));
 }
