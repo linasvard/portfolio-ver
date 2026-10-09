@@ -1,5 +1,4 @@
-import GithubIcon from "../../assets/icons/GithubIcon"
-import LinkedinIcon from "../../assets/icons/LinkedinIcon"
+import CvIcon from "../../assets/icons/CvIcon"
 import "../../assets/styles/Navbar.css"
 
 
@@ -17,12 +16,7 @@ const Navbar = () => {
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
             <div className="social-icons">
-                <a href="https://www.linkedin.com/in/linas-vard/" target="_blank" rel="noopener noreferrer">
-                    <LinkedinIcon className="social-icon" />
-                </a>
-                <a href="https://github.com/linasvard" target="_blank" rel="noopener noreferrer">
-                    <GithubIcon className="social-icon" />
-                </a>
+                <CvIcon className="cv-btn" />
             </div>
         </div>
     </nav>
