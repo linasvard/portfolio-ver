@@ -10,12 +10,12 @@ const navbarLinks = [
 
 const Navbar = () => {
   return (
-    <nav className="navbar-container bg-light">
+    <nav className="navbar-container h-navbar bg-light p-md flex justify-between items-center">
         <div className="logo">
             <img src="/src/assets/logo.png" alt="Logo" />
         </div>
-        <div className="navbar-right">
-            <ul className="navbar-links text-dark">
+        <div className="navbar-right gap-md flex items-center">
+            <ul className="navbar-links text-dark gap-md flex">
                 {navbarLinks.map((link) => (
                     <NavbarLink key={link.href} href={link.href}>
                         {link.name}
