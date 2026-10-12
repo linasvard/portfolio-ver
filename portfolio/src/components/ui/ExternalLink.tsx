@@ -10,7 +10,7 @@ const ExternalLink = ({ href, children }) => {
     href={href} 
     target="_blank" 
     rel="noopener noreferrer"
-    className="text-accent hover:underline"
+    className="text-accent hover:underline external-link"
     >   
       {children}
     </a>

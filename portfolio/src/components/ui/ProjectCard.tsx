@@ -1,5 +1,6 @@
 import ExternalLink from "./ExternalLink";
-import GithubIcon from "../../assets/icons/GithubIcon";
+import "../../assets/styles/ProjectCard.css"
+
 const ProjectCard = ({ image, title, categories, description, github, demo }) => {
     return (
         <article>
@@ -22,7 +23,7 @@ const ProjectCard = ({ image, title, categories, description, github, demo }) =>
                 </ul>
                 <h3 className="text-subheading font-medium">{title}</h3>
                 <p>{description}</p>
-                <div className="flex gap-sm">
+                <div className="flex gap-sm project-card-btns">
                     <ExternalLink href={github}>GitHub</ExternalLink>
                     <ExternalLink href={demo}>Demo</ExternalLink>
                 </div>

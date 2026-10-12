@@ -16,5 +16,23 @@ export const projects = [
         categories: ["MongoDB", "Fullstack", "API"],
         github: "https://github.com/linasvard/portfolio",
         demo: "https://this-is-the-library.vercel.app/"
+    },
+    {
+        id: 3,
+        image: "/src/assets/images/ikea.jpg",
+        title: "IKEA Escape Room",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        categories: ["TypeScript", "LocalStorage", "Vite", "Agila metoder"],
+        github: "https://github.com/linasvard/portfolio",
+        demo: "https://linasvard.github.io/ikea-escape-room/"
+    },
+    {
+        id: 4,
+        image: "/src/assets/images/portfolio.jpg",
+        title: "Portfolio",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        categories: ["React", "Tailwind", "Vite"],
+        github: "https://github.com/linasvard/portfolio",
+        demo: "https://linasvard.github.io/portfolio/"
     }
 ]
