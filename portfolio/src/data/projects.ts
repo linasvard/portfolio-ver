@@ -19,7 +19,7 @@ export const projects = [
     },
     {
         id: 3,
-        image: "/src/assets/images/ikea.jpg",
+        image: "/src/assets/images/ikea-2.jpg",
         title: "IKEA Escape Room",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         categories: ["TypeScript", "LocalStorage", "Vite", "Agila metoder"],
@@ -28,9 +28,9 @@ export const projects = [
     },
     {
         id: 4,
-        image: "/src/assets/images/portfolio.jpg",
-        title: "Portfolio",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        image: "/src/assets/images/negative-space-2.jpg",
+        title: "Negative Space",
+        description: "Det här projektet ingår i en kurs om samarbetet mellan designer och utvecklare, där vi genomförde en praktisk designöverlämning mellan två grupper för att öva på att göra en design tydlig, kravställd och implementerbar.",
         categories: ["React", "Tailwind", "Vite"],
         github: "https://github.com/linasvard/portfolio",
         demo: "https://linasvard.github.io/portfolio/"
