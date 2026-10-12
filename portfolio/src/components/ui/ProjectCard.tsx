@@ -8,7 +8,12 @@ import type { Project } from "../../data/projects"
 const ProjectCard = ({ image, title, categories, description, github, demo }: Project) => {
     
     return (
-        <article className="flex flex-col h-full">
+        <motion.article
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.15 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="flex flex-col h-full">
             <a href={demo} target="_blank" rel="noopener noreferrer">
                 <div className="overflow-hidden rounded-lg">
                     <motion.img 
@@ -47,7 +52,7 @@ const ProjectCard = ({ image, title, categories, description, github, demo }: Pr
                 </div>
              </div>
             
-        </article>
+        </motion.article>
     )
 };
 
