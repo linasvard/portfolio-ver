@@ -1,15 +1,23 @@
 import ExternalLink from "./ExternalLink";
 import "../../assets/styles/ProjectCard.css"
+import { motion } from "motion/react"
 
 const ProjectCard = ({ image, title, categories, description, github, demo }) => {
+
+    
+
     return (
         <article>
             <a href={demo} target="_blank" rel="noopener noreferrer">
-                <img 
-                src={image} 
-                alt={`Bild som visar projektet ${title}`}
-                className="w-full h-auto object-cover rounded-lg"
-             />
+                <div className="overflow-hidden rounded-lg">
+                    <motion.img 
+                        whileHover={{ scale: 1.02 }}
+                        transition={{ duration: 0.45, ease: "easeInOut"}}
+                        src={image} 
+                        alt={`Bild som visar projektet ${title}`}
+                        className="w-full h-auto object-cover rounded-lg origin-center"
+                    />
+                </div>
             </a>
             
              <div className="px-0 py-6 flex flex-col gap-xs">
