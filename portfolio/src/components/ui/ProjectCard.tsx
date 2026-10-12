@@ -34,13 +34,16 @@ const ProjectCard = ({ image, title, categories, description, github, demo }: Pr
                 <p>{description}</p>
                 <div className="flex gap-sm project-card-btns">
                     <ExternalLink 
-                    href={github}
-                    icon={<GithubIcon className="w-4 h-4" />}
-                    >Github</ExternalLink>
-                    <ExternalLink 
+                    className="demo-link"
                     href={demo}
-                    icon={<LinkIcon className="w-4 h-4" />}
+                    icon={<LinkIcon className="w-5 h-5" />}
                     >Demo</ExternalLink>
+                    <ExternalLink
+                    className="github-link" 
+                    href={github}
+                    icon={<GithubIcon className="w-5 h-5" />}
+                    >Github</ExternalLink>
+                    
                 </div>
              </div>
             

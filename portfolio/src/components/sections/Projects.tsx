@@ -5,9 +5,9 @@ import { useState } from "react"
 const allCategories = [...new Set(projects.flatMap((p) => p.categories))]
 
 const Projects = () => {
-    const [selected, setSelected] = useState([]);
+    const [selected, setSelected] = useState<string[]>([]);
 
-    const handleCategoryClick = (cat) => {
+    const handleCategoryClick = (cat: string) => {
         if (selected.includes(cat)) {
             setSelected(selected.filter((c) => c !== cat));
         } else {

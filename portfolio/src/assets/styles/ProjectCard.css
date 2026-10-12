@@ -7,10 +7,12 @@
     align-items: center;
     display: flex;
     justify-content: center;
+    gap: 0.5rem;
 }
 
 .project-card-btns {
-    margin-top: 1rem;
+    margin-top: 2rem;
     justify-content: space-between;
 
 }
+
