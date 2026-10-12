@@ -1,11 +1,12 @@
 import ExternalLink from "./ExternalLink";
 import "../../assets/styles/ProjectCard.css"
 import { motion } from "motion/react"
+import GithubIcon from "../../assets/icons/GithubIcon";
+import LinkIcon from "../../assets/icons/LinkIcon";
+import type { Project } from "../../data/projects"
 
-const ProjectCard = ({ image, title, categories, description, github, demo }) => {
-
+const ProjectCard = ({ image, title, categories, description, github, demo }: Project) => {
     
-
     return (
         <article>
             <a href={demo} target="_blank" rel="noopener noreferrer">
@@ -32,8 +33,14 @@ const ProjectCard = ({ image, title, categories, description, github, demo }) =>
                 <h3 className="text-subheading font-medium">{title}</h3>
                 <p>{description}</p>
                 <div className="flex gap-sm project-card-btns">
-                    <ExternalLink href={github}>GitHub</ExternalLink>
-                    <ExternalLink href={demo}>Demo</ExternalLink>
+                    <ExternalLink 
+                    href={github}
+                    icon={<GithubIcon className="w-4 h-4" />}
+                    >Github</ExternalLink>
+                    <ExternalLink 
+                    href={demo}
+                    icon={<LinkIcon className="w-4 h-4" />}
+                    >Demo</ExternalLink>
                 </div>
              </div>
             

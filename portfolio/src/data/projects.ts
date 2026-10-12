@@ -1,3 +1,13 @@
+export type Project = {
+    id: number;
+    image: string;
+    title: string;
+    description: string;
+    categories: string[];
+    github: string;
+    demo: string;
+}
+
 export const projects = [
     {
         id: 1,
