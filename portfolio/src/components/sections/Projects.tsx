@@ -21,7 +21,7 @@ const Projects = () => {
   return (
     <section className="py-section" id="projects">
         <h2 className="text-heading">All my works</h2>
-        <div className="flex flex-wrap gap-x-md gap-y-sm mt-sm mb-md w-full justify-start md:text-md md:text-lg font-sans font-medium">
+        <div className="flex flex-wrap cursor-pointer gap-x-md gap-y-sm mt-sm mb-md w-full justify-start text-lg font-sans font-medium">
             <button 
             onClick={() => setSelected([])}
             aria-pressed={selected.length === 0}

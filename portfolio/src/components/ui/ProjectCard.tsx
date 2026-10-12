@@ -27,7 +27,7 @@ const ProjectCard = ({ image, title, categories, description, github, demo }: Pr
             </a>
             
              <div className="px-0 py-6 flex flex-col gap-xs flex-1">
-                <ul className="flex flex-wrap gap-xs">
+                <ul className="flex flex-wrap gap-xs text-dark mb-xs">
                     {categories.map((cat) => (
                         <li key={cat} className="text-dark text-sm font-medium not-last:after:content-['/'] not-last:after:px-xs">
                             {cat}
@@ -36,7 +36,7 @@ const ProjectCard = ({ image, title, categories, description, github, demo }: Pr
                     
                 </ul>
                 <h3 className="text-subheading font-medium">{title}</h3>
-                <p className="mb-md">{description}</p>
+                <p className="mb-md text-lg font-sans">{description}</p>
                 <div className="flex gap-sm project-card-btns mt-auto">
                     <ExternalLink 
                     className="demo-link"
