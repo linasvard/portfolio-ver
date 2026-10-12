@@ -31,7 +31,7 @@ export const projects = [
         id: 3,
         image: "/src/assets/images/ikea-2.jpg",
         title: "IKEA Escape Room",
-        description: "Ett interaktivt webbaserat spel utvecklat som ett gruppprojekt under utbildningen till frontendutvecklare. Målet är att navigera sig genom ett IKEA-varuhus uppdelat i fyra unika rum fyllda med olika utmaningar, från att hantera barnavdelningen till att pricka in rätt betalkortskod i kassan.Projektet är byggt utan ramverk med TypeScript, SASS, HTML och Vite, och innehåller funktioner som speltimer, highscore-system via LocalStorage och avancerad DOM-manipulation.",
+        description: "Ett interaktivt webbaserat spel utvecklat som ett gruppprojekt för kurs inom Agila metoder och TypeScript. Målet är att navigera sig genom ett IKEA-varuhus uppdelat i fyra unika rum fyllda med olika utmaningar, från att hantera barnavdelningen till att pricka in rätt betalkortskod i kassan.Projektet är byggt utan ramverk med TypeScript, SASS, HTML och Vite, och innehåller funktioner som speltimer, highscore-system via LocalStorage och avancerad DOM-manipulation.",
         categories: ["Front end", "TypeScript", "LocalStorage", "Vite", "Agila metoder"],
         github: "https://github.com/linasvard/portfolio",
         demo: "https://linasvard.github.io/ikea-escape-room/"
@@ -40,7 +40,7 @@ export const projects = [
         id: 4,
         image: "/src/assets/images/negative-space-2.jpg",
         title: "Negative Space",
-        description: "Det här projektet ingår i en kurs om samarbetet mellan designer och utvecklare, där vi genomförde en praktisk designöverlämning mellan två grupper för att öva på att göra en design tydlig, kravställd och implementerbar.",
+        description: "En responsiv onepager för ett fiktivt rymdspel, skapad som en del av en designöverlämning mellan utvecklare och designers. Projektet fokuserar på en atmosfärisk design med mörk rymdbakgrund, färgglada accenter och genomtänkt typografi. Sidan är byggd med HTML, SCSS (med Grid och Flexbox), JavaScript samt Vite, och har optimerats för god tillgänglighet.",
         categories: ["Front end", "Grafisk design", "Figma", "Sass", "Agila metoder"],
         github: "https://github.com/linasvard/negative-space",
         demo: "https://linasvard.github.io/negative-space/"
@@ -49,7 +49,7 @@ export const projects = [
         id: 5,
         image: "/src/assets/images/min-budget.jpg",
         title: "Min Budget.",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        description: "En responsiv budgetapplikation skapad för att hantera personliga inkomster och utgifter. Applikationen har dynamiska kategorier, realtidsuppdatering av balans, datumstämplade transaktioner samt strikt validering av användarinput. All data sparas säkert i webbläsarens LocalStorage för att finnas kvar till nästa besök. Projektet är byggt med TypeScript, HTML och CSS.",
         categories: ["Front end", "LocalStorage", "TypeScript"],
         github: "https://github.com/linasvard/min-budget",
         demo: "https://linasvard.github.io/min-budget/"
@@ -58,7 +58,7 @@ export const projects = [
         id: 6,
         image: "/src/assets/images/portfolio-1.jpg",
         title: "Portfolio 1.0",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        description: "Detta är en tidigare version av min personliga portfolio, skapad för att visa upp projekt, utveckling och erfarenheter som frontendutvecklare. Den är uppbyggd med TypeScript för logik och dynamisk datahantering via externa JSON-filer för att strukturera innehållet.",
         categories: ["Front end", "Grafisk design", "TypeScript", "Sass"],
         github: "https://github.com/linasvard/portfolio",
         demo: "https://linasvard.github.io/portfolio/"
