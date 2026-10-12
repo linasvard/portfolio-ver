@@ -6,7 +6,7 @@
   /*Font styles*/
   --font-sans-serif: "jovie", sans-serif;
   --font-weight-regular: 400;
-  --font-sans: "neue-haas-grotesk-display", sans-serif;
+  --font-sans: "aktiv-grotesk", sans-serif;
   --font-weight-bold: 600;
   --font-weight-medium: 500;
 
@@ -81,7 +81,7 @@
     transform: scaleX(1);
   }
   &[aria-pressed="true"] {
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-bold);
   }
 }
 
