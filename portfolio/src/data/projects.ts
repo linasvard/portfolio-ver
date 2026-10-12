@@ -15,6 +15,6 @@ export const projects = [
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         categories: ["MongoDB", "Fullstack", "API"],
         github: "https://github.com/linasvard/portfolio",
-        demo: "https://linasvard.github.io/portfolio/"
+        demo: "https://this-is-the-library.vercel.app/"
     }
 ]

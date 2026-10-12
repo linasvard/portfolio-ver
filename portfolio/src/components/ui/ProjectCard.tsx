@@ -1,13 +1,16 @@
 import ExternalLink from "./ExternalLink";
-
+import GithubIcon from "../../assets/icons/GithubIcon";
 const ProjectCard = ({ image, title, categories, description, github, demo }) => {
     return (
         <article>
-            <img 
-            src={image} 
-            alt={`Bild som visar projektet ${title}`}
-            className="w-full h-auto object-cover rounded-lg"
+            <a href={demo} target="_blank" rel="noopener noreferrer">
+                <img 
+                src={image} 
+                alt={`Bild som visar projektet ${title}`}
+                className="w-full h-auto object-cover rounded-lg"
              />
+            </a>
+            
              <div className="px-0 py-6 flex flex-col gap-xs">
                 <ul className="flex flex-wrap gap-xs">
                     {categories.map((cat) => (
