@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { motion } from "motion/react";
 
 type ExternalLinkProps = {
     href?: string;
@@ -14,16 +15,18 @@ const ExternalLink = ({ href, children, icon, className = "" }: ExternalLinkProp
     }
 
   return (
-    <a 
+    <motion.a
+    whileHover={{ scale: 1.0 }}
+    transition={{ duration: 0.3, ease: "easeInOut" }}
     href={href} 
     target="_blank" 
     rel="noopener noreferrer"
-    className={`text-dark hover:bg-accent external-link ${className}`}
+    className={`text-dark hover:bg-accent transition-colors external-link ${className}`}
     > 
       {icon && <span aria-hidden="true" >{icon}</span>}
       {children}
       <span className="sr-only"> (öppnas i nytt fönster)</span>
-    </a>
+    </motion.a>
   )
 }
 
