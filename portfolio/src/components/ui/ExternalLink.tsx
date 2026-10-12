@@ -16,7 +16,7 @@ const ExternalLink = ({ href, children, icon, className = "" }: ExternalLinkProp
 
   return (
     <motion.a
-    whileHover={{ scale: 1.0 }}
+    whileHover={{ scale: 1.0, translateY: -2 }}
     transition={{ duration: 0.3, ease: "easeInOut" }}
     href={href} 
     target="_blank" 
