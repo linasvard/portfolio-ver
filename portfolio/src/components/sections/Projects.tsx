@@ -38,7 +38,7 @@ const Projects = () => {
                 </button>
             ))}
         </div>
-        <div className="projects-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-md">
+        <div className="projects-grid grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-md md:gap-y-md lg:gap-y-xl">
             {filteredProjects.map((project) => (
                 <ProjectCard key={project.id} {...project} />
             ))}
