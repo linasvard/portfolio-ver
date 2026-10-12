@@ -1,5 +1,6 @@
 import HeroImg from "../../assets/images/hero-img.png";
 import Underline from "../ui/Underline";
+import "../../assets/styles/Hero.css"
 
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
             <div> 
                 <h1 className="text-hero w-full leading-tight">
                     <span className="block text-dark text-2xl">
-                    <span className="font-bold">Hej, </span>Lina heter jag!
+                        <span className="font-bold">Hej, </span>Lina heter jag!
                     </span>
                     En{" "}<span className="relative inline-block isolate">multitasker<Underline className="text-accent"/></span>{" "} som älskar design, webb och tillgänglighet.
                 </h1>
@@ -18,7 +19,7 @@ const Hero = () => {
             </div>
         </div> 
         <div className="flex justify-left mt-lg">
-            <a href="#projects" className="link-underline text-dark text-lg font-semibold">
+            <a href="#projects" className="link-underline text-dark font-medium text-lg">
                 Se mina projekt nedan.
             </a>
         </div>      

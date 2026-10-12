@@ -1,17 +1,19 @@
 @import "tailwindcss";
 
+
 @theme {
 
   /*Font styles*/
   --font-sans-serif: "jovie", sans-serif;
   --font-weight-regular: 400;
-  --font-sans: "neue-haas-grotesk-display", sans-serif;
+  --font-sans: "nitti-grotesk", sans-serif;
   --font-weight-bold: 600;
+  --font-weight-medium: 500;
 
   /*Text sizes*/
   --text-hero: 4.5rem;
   --text-heading: 2rem;
-  --text-subheading: 1rem;
+  --text-subheading: 1.8rem;
   --text-body: 1rem;
   --text-caption: 0.875rem;
 
@@ -28,7 +30,10 @@
   --spacing-sm: 1rem;
   --spacing-md: 2rem;
   --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+  --spacing-xxl: 8rem;
   --spacing-navbar: 80px;
+  --spacing-section: 4rem;
 
 }
 
@@ -53,6 +58,33 @@
 
 }
 
+@utility filter-tab {
+  position: relative;
+  padding-bottom: 0.5rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+
+    background-color: var(--color-accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease;
+  }
+
+  &:hover::after,
+  &[aria-pressed="true"]::after {
+    transform: scaleX(1);
+  }
+  &[aria-pressed="true"] {
+    font-weight: var(--font-weight-bold);
+  }
+}
+
 body {
   font-family: var(--font-sans-serif);
   font-weight: var(--font-weight-regular);
@@ -61,12 +93,18 @@ body {
   background-color: var(--color-light);
 }
 
+h2 {
+  font-weight: var(--font-weight-medium);
+}
+
 section {
   max-width: 1700px;
   padding: 0 var(--spacing-md);
   margin: 0 auto;
   width: 100%;
 }
+
+
 
 
 .highlight {
