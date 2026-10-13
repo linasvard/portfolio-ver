@@ -38,14 +38,14 @@
 
 }
 
-@utility text-projectcard {
+@utility text-big-p {
   font-family: var(--font-sans-serif);
-  font-size: 1.3rem;
+  font-size: 2rem;
   line-height: 1.6;
   color: var(--color-dark);
 }
 
-@utility text-p {
+@utility text-projectcard {
   font-family: var(--font-sans);
   font-size: var(--text-body);
   line-height: 1.5;
