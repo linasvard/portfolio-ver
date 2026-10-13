@@ -1,0 +1,25 @@
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--color-dark);
+  border-radius: 4px;
+  background-color: var(--color-light);
+}
+
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--color-dark);
+  border-radius: 4px;
+  background-color: var(--color-light);
+  resize: vertical;
+}
+
+button {
+    width: 100%;
+}

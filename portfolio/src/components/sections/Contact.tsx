@@ -2,6 +2,8 @@ import WigglyLine from '../../assets/images/wiggly-line.png';
 import MailIcon from '../../assets/icons/mail-icon.png';
 import LinkedinIcon from '../../assets/icons/linkedin-icon.png';
 
+import '../../assets/styles/Contact.css';
+
 const Contact = () => {
   return (
     <section
