@@ -69,7 +69,7 @@ export const skills: Skill[] = [
         icon: MotionIcon
     },
     {
-        name: "Adobe Creative Suite",
+        name: "Adobe Creative Cloud",
         icon: CreativecloudIcon
     }   
 ]
