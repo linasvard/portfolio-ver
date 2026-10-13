@@ -15,7 +15,7 @@
   --text-heading: 2rem;
   --text-about: 3.7rem;
   --text-subheading: 1.8rem;
-  --text-body: 1rem;
+  --text-body: 1.1rem;
   --text-caption: 0.875rem;
 
   /*Color styles*/
@@ -38,6 +38,20 @@
 
 }
 
+@utility text-projectcard {
+  font-family: var(--font-sans-serif);
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: var(--color-dark);
+}
+
+@utility text-p {
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: 1.5;
+  color: var(--color-dark);
+}
+
 @utility link-underline {
   position: relative;
   &::after {
@@ -58,6 +72,7 @@
   }
 
 }
+
 
 @utility filter-tab {
   position: relative;

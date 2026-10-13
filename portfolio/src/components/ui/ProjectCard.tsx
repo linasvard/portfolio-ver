@@ -36,7 +36,7 @@ const ProjectCard = ({ image, title, categories, description, github, demo }: Pr
                     
                 </ul>
                 <h3 className="text-subheading font-medium mb-xs">{title}</h3>
-                <p className="mb-md text-lg font-sans">{description}</p>
+                <p className="mb-md text-p">{description}</p>
                 <div className="flex gap-sm project-card-btns mt-auto">
                     <ExternalLink 
                     className="demo-link"
