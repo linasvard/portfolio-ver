@@ -1,11 +1,12 @@
 import AboutMeImg from "../../assets/images/lina-polaroid.png";
 import { motion } from "motion/react"
 import UnderlineAbout from "../ui/UnderlineAbout";
+import Skills from "./Skills";
 
 const About = () => {
   return (
     <section id="about">
-        <div className="flex flex-col flex-col-reverse gap-lg items-top md:justify-between justify-center mt-lg lg:flex-row md:gap-md">    
+        <div className="flex mb-lg flex-col flex-col-reverse gap-lg items-top md:justify-between justify-center mt-lg lg:flex-row md:gap-md">    
             <div className="max-w-400 md:max-w-300 lg:max-w-200">
                 <h2 className="text-about font-bold">{" "}<span className="relative inline-block isolate">Vem är jag?<UnderlineAbout className="text-accent" /></span></h2>
                 <p className="mt-0 mx-1 text-xl font-sans mb-md">
@@ -25,7 +26,7 @@ const About = () => {
                 alt="Bild på Lina" />
             </div>
         </div>    
-        
+        <Skills />
     </section>
   )
 }
