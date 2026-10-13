@@ -37,9 +37,6 @@ export const skills = [
         name: "MongoDB"
     },
     {
-        name: "Git"
-    },
-    {
         name: "Figma"
     },
     {
