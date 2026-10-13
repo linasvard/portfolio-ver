@@ -5,7 +5,7 @@ const CssIcon = ({
   ...props
 }: SVGProps<SVGSVGElement>) => (
   <svg
-    viewBox="0 0 32 32"
+    viewBox="0 1 31 31"
     xmlns="http://www.w3.org/2000/svg"
     fill="currentColor"
     className={className}

@@ -13,6 +13,7 @@ import VercelIcon from "../assets/icons/skills/VercelIcon";
 import ExpressIcon from "../assets/icons/skills/ExpressIcon";
 import MongoDbIcon from "../assets/icons/skills/MongoDbIcon";
 import CreativecloudIcon from "../assets/icons/skills/CreativecloudIcon";
+import GsapIcon from "../assets/icons/skills/GsapIcon";
 
 export type Skill = {
     name: string;
@@ -69,7 +70,11 @@ export const skills: Skill[] = [
         icon: MotionIcon
     },
     {
-        name: "Adobe Creative Cloud",
+        name: "GSAP",
+        icon: GsapIcon
+    },
+    {
+        name: "Creative Cloud",
         icon: CreativecloudIcon
     }   
 ]
