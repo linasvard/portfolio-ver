@@ -79,7 +79,7 @@
     padding: 4rem var(--spacing-lg);
   }
   @media (min-width: 1024px) {
-    padding: 3rem var(--spacing-section);
+    padding: 4rem var(--spacing-section);
   }
 }
 

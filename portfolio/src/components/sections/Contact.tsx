@@ -9,7 +9,7 @@ const Contact = () => {
     <section
       className="bg-accent"
       id="contact">
-      <div className="padding-overall max-width grid grid-cols-1 lg:grid-cols-[2fr_3fr] md:gap-xxl gap-md">
+      <div className="padding-overall max-width grid grid-cols-1 lg:grid-cols-[2fr_3fr] md:gap-xxl gap-md items-start">
         <div className="flex flex-col gap-md lg:max-w-[500px] max-w-full">
           <div className="flex flex-col gap-sm">
             <h2 className="font-bold text-heading">Let's get in touch</h2>
@@ -44,15 +44,15 @@ const Contact = () => {
             </address>
           </div>
         </div>
-        <form className="mt-md grid grid-cols-1 md:grid-cols-2 gap-sm">
+        <form className="grid grid-cols-1 md:grid-cols-2 gap-sm">
           <div className="flex flex-col gap-xs">
-            <label htmlFor="name">Namn</label>
-            <input type="text" id="name" name="name" />
+            <label htmlFor="name">Namn*</label>
+            <input type="text" id="name" name="name" required />
           </div>
 
           <div className="flex flex-col gap-xs">
-            <label htmlFor="email">E-post</label>
-            <input type="email" id="email" name="email" />
+            <label htmlFor="email">E-post*</label>
+            <input type="email" id="email" name="email" required/>
           </div>
 
           <div className="flex flex-col gap-xs">
@@ -61,13 +61,13 @@ const Contact = () => {
           </div>
 
           <div className="flex flex-col gap-xs">
-            <label htmlFor="subject">Ämne</label>
-            <input type="text" id="subject" name="subject" />
+            <label htmlFor="subject">Ämne*</label>
+            <input type="text" id="subject" name="subject" required />
           </div>
 
           <div className="flex flex-col gap-xs md:col-span-2">
-            <label htmlFor="message">Meddelande</label>
-            <textarea id="message" name="message" rows={5}></textarea>
+            <label htmlFor="message">Meddelande*</label>
+            <textarea id="message" name="message" rows={5} required></textarea>
           </div>
 
           <div className="md:col-span-2">
