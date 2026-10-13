@@ -10,10 +10,10 @@ const Contact = () => {
       <div className="contact grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-xxl">
         <div className="flex flex-col gap-md max-w-[500px]">
           <div className="flex flex-col gap-sm">
-            <h2>Let's get in touch</h2>
+            <h2 className="font-bold text-heading">Let's get in touch</h2>
             <p>
               Använd gärna formuläret eller släng iväg ett meddelande på
-              LinkedIn/mejl, eller varför inte alla?
+              LinkedIn eller mejlen, eller varför inte alla tre?
             </p>
           </div>
           <div>
