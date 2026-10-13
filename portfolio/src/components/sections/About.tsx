@@ -5,8 +5,8 @@ import Skills from "./Skills";
 
 const About = () => {
   return (
-    <section id="about">
-        <div className="flex mb-lg flex-col flex-col-reverse gap-lg items-top md:justify-between justify-center mt-lg lg:flex-row md:gap-md">    
+    <section className="about" id="about">
+        <div className="flex mb-xxl flex-col flex-col-reverse gap-lg items-top md:justify-between justify-center lg:flex-row md:gap-md">    
             <div className="max-w-400 md:max-w-300 lg:max-w-200">
                 <h2 className="text-about font-bold">{" "}<span className="relative inline-block isolate">Vem är jag?<UnderlineAbout className="text-accent" /></span></h2>
                 <p className="mt-0 mx-1 font-medium text-md mb-md">

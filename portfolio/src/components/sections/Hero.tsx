@@ -4,7 +4,7 @@ import "../../assets/styles/Hero.css"
 
 const Hero = () => {
   return (
-    <section>
+    <section className="hero">
         <div className="hero-container flex flex-col-reverse md:flex-row gap-md items-center justify-between">
             <div> 
                 <h1 className="text-hero w-full leading-tight">
