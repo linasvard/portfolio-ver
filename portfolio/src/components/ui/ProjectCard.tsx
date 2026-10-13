@@ -13,6 +13,24 @@ const ProjectCard = ({
   github,
   demo,
 }: Project) => {
+
+    const links = (
+        <>
+            <ExternalLink
+                className="demo-link"
+                href={demo}
+                icon={<LinkIcon className="w-5 h-5" />}>
+                Demo
+            </ExternalLink>
+            <ExternalLink
+                className="github-link"
+                href={github}
+                icon={<GithubIcon className="w-5 h-5" />}>
+                Github
+            </ExternalLink>
+        </>
+    )
+
   return (
     <motion.article
       initial={{ opacity: 0, y: 40 }}
@@ -20,14 +38,13 @@ const ProjectCard = ({
       viewport={{ once: true, amount: 0.15 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
       className="flex flex-col h-full">
-      <motion.a
+      
+      <motion.div
         initial="rest"
         animate="rest"
         whileHover="hover"
-        className="overflow-hidden rounded-lg relative block"
-        href={demo}
-        target="_blank"
-        rel="noopener noreferrer">
+        className="overflow-hidden rounded-lg relative block">
+        
         <motion.img
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.45, ease: 'easeInOut' }}
@@ -36,7 +53,7 @@ const ProjectCard = ({
           className="w-full h-auto object-cover rounded-lg origin-center"
         />
         <motion.div 
-        className="absolute bottom-0 left-0 right-0 flex py-md bg-light text-dark"
+        className="absolute bottom-0 left-0 right-0 hidden lg:flex py-md bg-light text-dark"
         variants={{
             rest: { y: "100%" },
             hover: { y: 0 }
@@ -48,22 +65,11 @@ const ProjectCard = ({
         >
 
             <div className="flex gap-sm project-card-btns mt-auto w-full justify-center">
-                <ExternalLink
-                    className="demo-link"
-                    href={demo}
-                    icon={<LinkIcon className="w-5 h-5" />}>
-                    Demo
-                </ExternalLink>
-                <ExternalLink
-                    className="github-link"
-                    href={github}
-                    icon={<GithubIcon className="w-5 h-5" />}>
-                    Github
-                </ExternalLink>
+                {links}
             </div>
         </motion.div>
 
-      </motion.a>
+      </motion.div>
 
       <div className="px-0 py-6 flex flex-col gap-xs flex-1">
         <ul className="flex flex-wrap gap-xs text-dark mb-xs">
