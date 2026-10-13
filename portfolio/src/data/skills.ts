@@ -16,9 +16,6 @@ export const skills = [
         name: "Tailwind CSS"
     },
     {
-        name: "JavaScript"
-    },
-    {
         name: "TypeScript"
     },
     {
