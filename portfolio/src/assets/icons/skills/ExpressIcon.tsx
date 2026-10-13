@@ -5,7 +5,7 @@ const ExpressIcon = ({
   ...props
 }: SVGProps<SVGSVGElement>) => (
   <svg
-    viewBox="0 0 24 24"
+    viewBox="0 -181.5 512 512"
     xmlns="http://www.w3.org/2000/svg"
     fill="currentColor"
     className={className}

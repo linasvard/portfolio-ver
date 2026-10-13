@@ -19,7 +19,7 @@ export type Skill = {
     icon?: ComponentType<SVGProps<SVGSVGElement>>;
 }
 
-export const skills = [
+export const skills: Skill[] = [
     {
         name: "HTML 5",
         icon: HtmlIcon
@@ -33,7 +33,7 @@ export const skills = [
         icon: SassIcon
     },
     {
-        name: "Tailwind CSS",
+        name: "Tailwind",
         icon: TailwindIcon
     },
     {

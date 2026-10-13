@@ -1,7 +1,7 @@
 import type { SVGProps } from 'react';
 
 const HtmlIcon = ({
-  className = 'w-15 h-15',
+  className = 'w-10 h-10',
   ...props
 }: SVGProps<SVGSVGElement>) => (
   <svg
