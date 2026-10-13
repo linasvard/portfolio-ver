@@ -19,7 +19,7 @@ const Projects = () => {
         ? projects : projects.filter((p) => p.categories.some((cat) => selected.includes(cat)));
 
   return (
-    <section className="projects" id="projects">
+    <section className="projects max-width padding-overall" id="projects">
         <h2 className="text-heading">All my works</h2>
         <div className="flex flex-wrap cursor-pointer gap-x-md gap-y-sm mt-sm mb-md w-full justify-start text-lg font-medium">
             <button 

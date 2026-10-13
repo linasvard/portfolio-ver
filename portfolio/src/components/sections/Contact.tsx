@@ -7,10 +7,10 @@ import '../../assets/styles/Contact.css';
 const Contact = () => {
   return (
     <section
-      className="bg-accent py-xl"
+      className="bg-accent"
       id="contact">
-      <div className="contact grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-xxl">
-        <div className="flex flex-col gap-md max-w-[500px]">
+      <div className="padding-overall max-width grid grid-cols-1 lg:grid-cols-[2fr_3fr] md:gap-xxl gap-md">
+        <div className="flex flex-col gap-md lg:max-w-[500px] max-w-full">
           <div className="flex flex-col gap-sm">
             <h2 className="font-bold text-heading">Let's get in touch</h2>
             <p>

@@ -73,6 +73,21 @@
 
 }
 
+@utility padding-overall {
+  padding: 4rem var(--spacing-md);
+  @media (min-width: 768px) {
+    padding: 4rem var(--spacing-lg);
+  }
+  @media (min-width: 1024px) {
+    padding: 3rem var(--spacing-section);
+  }
+}
+
+@utility max-width {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
 
 @utility filter-tab {
   position: relative;
@@ -109,25 +124,16 @@ body {
   background-color: var(--color-light);
 }
 
+
 h2 {
   font-weight: var(--font-weight-medium);
 }
 
 section,
 .contact {
-  padding: 2.5rem var(--spacing-md);
-  margin: 0 auto;
+
   width: 100%;
 }
-
-.hero,
-.projects,
-.about,
-.contact {
-  max-width: 1650px;
-  margin: 0 auto;
-}
-
 
 
 

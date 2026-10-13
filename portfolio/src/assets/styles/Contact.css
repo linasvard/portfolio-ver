@@ -19,7 +19,3 @@ textarea {
   background-color: var(--color-light);
   resize: vertical;
 }
-
-button {
-    width: 100%;
-}
