@@ -9,13 +9,13 @@ const About = () => {
         <div className="flex mb-lg flex-col flex-col-reverse gap-lg items-top md:justify-between justify-center mt-lg lg:flex-row md:gap-md">    
             <div className="max-w-400 md:max-w-300 lg:max-w-200">
                 <h2 className="text-about font-bold">{" "}<span className="relative inline-block isolate">Vem är jag?<UnderlineAbout className="text-accent" /></span></h2>
-                <p className="mt-0 mx-1 text-xl font-sans mb-md">
+                <p className="mt-0 mx-1 font-medium text-md mb-md">
                     Designern som blev utvecklare
                 </p>
                 <p className="mt-md mx-1 text-big-p">
                     Jag heter Lina och är en utbildad grafisk designer och frontendstudent som är bosatt i Göteborg, Sverige. Lever i gränslandet mellan design och utveckling och brinner lite extra för tillgänglighet.
                 </p>
-                <p className="text-xl font-sans mt-md">Kontakta mig gärna så kan vi diskuterar jag mer än gärna frontend, design eller varför inte båda?</p>
+                <p className="text-md mt-md">Kontakta mig gärna så kan vi diskuterar jag mer än gärna frontend, design eller varför inte båda?</p>
             </div>
             <div className="flex justify-center h-full md:justify-center lg:justify-center sm:max-w-400 md:max-w-300 lg:max-w-200">
                 <motion.img 
