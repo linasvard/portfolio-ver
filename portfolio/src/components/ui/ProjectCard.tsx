@@ -20,8 +20,11 @@ const ProjectCard = ({
       viewport={{ once: true, amount: 0.15 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
       className="flex flex-col h-full">
-      <a
-        className="overflow-hidden rounded-lg group relative block"
+      <motion.a
+        initial="rest"
+        animate="rest"
+        whileHover="hover"
+        className="overflow-hidden rounded-lg relative block"
         href={demo}
         target="_blank"
         rel="noopener noreferrer">
@@ -32,12 +35,35 @@ const ProjectCard = ({
           alt={`Bild som visar projektet ${title}`}
           className="w-full h-auto object-cover rounded-lg origin-center"
         />
-        <div className="absolute inset-0 flex items-end p-sm bg-accent text-dark">
+        <motion.div 
+        className="absolute bottom-0 left-0 right-0 flex py-md bg-light text-dark"
+        variants={{
+            rest: { y: "100%" },
+            hover: { y: 0 }
+        }}
+        transition={{ 
+            duration: 0.3,
+            ease: "easeInOut"
+        }}
+        >
 
-            <div className="text-sm">{description}</div>
-        </div>
-        
-      </a>
+            <div className="flex gap-sm project-card-btns mt-auto w-full justify-center">
+                <ExternalLink
+                    className="demo-link"
+                    href={demo}
+                    icon={<LinkIcon className="w-5 h-5" />}>
+                    Demo
+                </ExternalLink>
+                <ExternalLink
+                    className="github-link"
+                    href={github}
+                    icon={<GithubIcon className="w-5 h-5" />}>
+                    Github
+                </ExternalLink>
+            </div>
+        </motion.div>
+
+      </motion.a>
 
       <div className="px-0 py-6 flex flex-col gap-xs flex-1">
         <ul className="flex flex-wrap gap-xs text-dark mb-xs">
@@ -51,7 +77,7 @@ const ProjectCard = ({
         </ul>
         <h3 className="text-subheading font-medium mb-xs">{title}</h3>
         <p className="mb-md text-projectcard">{description}</p>
-        <div className="flex gap-sm project-card-btns mt-auto">
+        {/*<div className="flex gap-sm project-card-btns mt-auto">
           <ExternalLink
             className="demo-link"
             href={demo}
@@ -64,7 +90,7 @@ const ProjectCard = ({
             icon={<GithubIcon className="w-5 h-5" />}>
             Github
           </ExternalLink>
-        </div>
+        </div>*/}
       </div>
     </motion.article>
   );
