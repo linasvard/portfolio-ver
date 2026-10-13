@@ -83,20 +83,9 @@ const ProjectCard = ({
         </ul>
         <h3 className="text-subheading font-medium mb-xs">{title}</h3>
         <p className="mb-md text-projectcard">{description}</p>
-        {/*<div className="flex gap-sm project-card-btns mt-auto">
-          <ExternalLink
-            className="demo-link"
-            href={demo}
-            icon={<LinkIcon className="w-5 h-5" />}>
-            Demo
-          </ExternalLink>
-          <ExternalLink
-            className="github-link"
-            href={github}
-            icon={<GithubIcon className="w-5 h-5" />}>
-            Github
-          </ExternalLink>
-        </div>*/}
+        <div className="flex gap-sm projects-card-btns mt-auto lg:hidden">
+          {links}
+        </div>
       </div>
     </motion.article>
   );
