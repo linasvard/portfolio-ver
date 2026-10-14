@@ -135,7 +135,9 @@ section,
   width: 100%;
 }
 
-
+button {
+  cursor: pointer;
+}
 
 .highlight {
   font-family: var(--font-sans-serif);

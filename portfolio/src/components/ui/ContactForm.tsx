@@ -176,7 +176,7 @@ const ContactForm = () => {
           type="submit"
           disabled={isSending}
 
-          className="bg-dark text-light py-2 px-4 rounded-3xl hover:bg-dark/80 transition-colors duration-300 w-full md:w-50"
+          className="bg-dark border border-accent text-accent py-2 px-4 rounded-3xl hover:bg-accent hover:text-dark hover:border hover:border-dark transition-colors duration-300 w-full md:w-50"
           >
           {isSending ? 'Skickar...' : 'Skicka'}
         </button>
