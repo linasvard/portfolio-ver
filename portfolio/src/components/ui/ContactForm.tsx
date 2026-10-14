@@ -57,6 +57,12 @@ const ContactForm = () => {
   const [contact, setContact] = useState<Contact>(initialContact);
   const [errors, setErrors] = useState<Errors>({});
 
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const fieldName =  e.target.name 
+    setContact({ ...contact, [fieldName]: e.target.value })
+    setErrors({ ...errors, [fieldName]: undefined })
+  }
+
   return (
     <form className="grid grid-cols-1 md:grid-cols-2 gap-sm">
       <div className="flex flex-col gap-xs">
