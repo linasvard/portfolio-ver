@@ -1,5 +1,31 @@
+import { useState, type ChangeEvent, type SubmitEvent } from 'react';
+
+type Contact = {
+    name: string;
+    email: string;
+    phone: string;
+    subject: string;
+    message: string;
+};
+
+const initialContact: Contact = {
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+};
+
+type Errors = Partial<Record<keyof Contact, string>>;
 
 const ContactForm = () => {
+
+    const [contact, setContact] = useState<Contact>(initialContact);
+
+    const [errors, setErrors] = useState<Errors>({});
+
+    
+
   return (
     <form className="grid grid-cols-1 md:grid-cols-2 gap-sm">
           <div className="flex flex-col gap-xs">
