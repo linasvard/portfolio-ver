@@ -34,7 +34,7 @@
   --spacing-xl: 6rem;
   --spacing-xxl: 8rem;
   --spacing-navbar: 80px;
-  --spacing-section: 4rem;
+  --spacing-section: 3rem;
 
 }
 
@@ -73,6 +73,21 @@
 
 }
 
+@utility padding-overall {
+  padding: 4rem var(--spacing-md);
+  @media (min-width: 768px) {
+    padding: 4rem var(--spacing-lg);
+  }
+  @media (min-width: 1024px) {
+    padding: 4rem var(--spacing-section);
+  }
+}
+
+@utility max-width {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
 
 @utility filter-tab {
   position: relative;
@@ -109,17 +124,16 @@ body {
   background-color: var(--color-light);
 }
 
+
 h2 {
   font-weight: var(--font-weight-medium);
 }
 
-section {
-  max-width: 1700px;
-  padding: 0 var(--spacing-md);
-  margin: 0 auto;
+section,
+.contact {
+
   width: 100%;
 }
-
 
 
 

@@ -19,7 +19,7 @@ const Projects = () => {
         ? projects : projects.filter((p) => p.categories.some((cat) => selected.includes(cat)));
 
   return (
-    <section className="py-section" id="projects">
+    <section className="projects max-width padding-overall" id="projects">
         <h2 className="text-heading">All my works</h2>
         <div className="flex flex-wrap cursor-pointer gap-x-md gap-y-sm mt-sm mb-md w-full justify-start text-lg font-medium">
             <button 
@@ -38,7 +38,7 @@ const Projects = () => {
                 </button>
             ))}
         </div>
-        <div className="projects-grid grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 md:gap-y-md lg:gap-y-xl">
+        <div className="projects-grid grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 md:gap-y-md lg:gap-y-lg">
             {filteredProjects.map((project) => (
                 <ProjectCard key={project.id} {...project} />
             ))}
