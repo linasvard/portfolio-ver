@@ -16,7 +16,7 @@ const Skills = () => {
                         {Icon && <Icon
                         className="h-19 w-auto max-w-full mb-xs" 
                         aria-hidden="true" />}
-                        <span className="text-md font-medium text-dark">{skill.name}</span>
+                        <span className="text-md font-sans font-medium text-dark">{skill.name}</span>
                     </li>
                 )
             })}

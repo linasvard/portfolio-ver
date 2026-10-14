@@ -82,7 +82,7 @@ const ProjectCard = ({
           ))}
         </ul>
         <h3 className="text-subheading font-medium mb-xs">{title}</h3>
-        <p className="mb-md text-projectcard">{description}</p>
+        <p className="mb-md max-w-200 text-projectcard text-dark/80">{description}</p>
         <div className="flex gap-sm projects-card-btns mt-auto lg:hidden">
           {links}
         </div>
