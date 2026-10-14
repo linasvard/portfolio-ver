@@ -79,7 +79,7 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: -0.3rem;
+    bottom: -0.25rem;
     height: 2px;
     width: 100%;
     background-color: var(--color-light);
