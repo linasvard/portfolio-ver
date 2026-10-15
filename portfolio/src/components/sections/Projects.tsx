@@ -1,4 +1,6 @@
+import { motion } from "motion/react";
 import { projects } from "../../data/projects"
+import { fadeInUp } from "../../utils/animations";
 import ProjectCard from "../ui/ProjectCard"
 import { useState } from "react"
 
@@ -20,22 +22,24 @@ const Projects = () => {
 
   return (
     <section className="projects max-width padding-overall" id="projects">
-        <h2 className="text-heading">All my works</h2>
+        <motion.h2 className="text-heading" {...fadeInUp(0.1)}>All my works</motion.h2>
         <div className="flex flex-wrap font-sans cursor-pointer gap-x-md gap-y-sm mt-sm mb-md w-full justify-start text-lg font-medium">
-            <button 
+            <motion.button 
+            {...fadeInUp(0.1)}
             onClick={() => setSelected([])}
             aria-pressed={selected.length === 0}
             className="filter-tab"
-            >Alla</button>
+            >Alla</motion.button>
             {allCategories.map((cat) => (
-                <button 
+                <motion.button 
+                {...fadeInUp(0.1)}
                 key={cat} 
                 onClick={() => handleCategoryClick(cat)}
                 aria-pressed={selected.includes(cat)}
                 className="filter-tab"
                 >
                     {cat}
-                </button>
+                </motion.button>
             ))}
         </div>
         <div className="projects-grid grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 md:gap-y-md lg:gap-y-lg">
