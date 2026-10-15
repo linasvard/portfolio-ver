@@ -21,7 +21,7 @@ const ExternalLink = ({ href, children, icon, className = "" }: ExternalLinkProp
     href={href} 
     target="_blank" 
     rel="noopener noreferrer"
-    className={`text-dark hover:bg-accent transition-colors external-link ${className}`}
+    className={`lg:text-accent lg:bg-dark text-dark bg-accent lg:hover:bg-accent lg:hover:text-dark transition-colors external-link ${className}`}
     > 
       {icon && <span aria-hidden="true" >{icon}</span>}
       {children}
