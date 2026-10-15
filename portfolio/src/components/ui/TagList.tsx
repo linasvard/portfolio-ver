@@ -4,7 +4,7 @@ const TagList = ({ categories }: { categories: string[] }) => {
               {categories.map((cat) => (
                 <li
                   key={cat}
-                  className="text-dark text-sm font-medium not-last:after:content-['/'] not-last:after:px-xs">
+                  className="text-dark text-sm mb-xs font-medium not-last:after:content-['/'] not-last:after:px-xs">
                   {cat}
                 </li>
               ))}

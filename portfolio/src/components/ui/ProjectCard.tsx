@@ -55,12 +55,12 @@ const ProjectCard = ({
           className="absolute bottom-0 left-0 right-0 hidden h-full px-md lg:flex flex-col gap-xs py-md bg-accent text-dark"
           variants={{ rest: { y: '100%' }, hover: { y: 0 } }}
           transition={{ duration: 0.3, ease: 'easeInOut' }}>
-          <div>
-            <h3 className="text-subheading font-medium mb-0">{title}</h3>
-          </div>
-          <div className="flex flex-wrap gap-xs text-dark mb-xs">
-            <TagList categories={categories} />
-          </div>
+          <p aria-hidden="true" className="text-subheading font-medium mb-0">
+            {title}
+          </p>
+
+          <TagList categories={categories} />
+
           <p className="mb-md max-w-200 text-projectcard font-medium text-dark">
             {description}
           </p>
@@ -69,10 +69,12 @@ const ProjectCard = ({
           </div>
         </motion.div>
       </motion.div>
-    
+
       <div className="px-0 py-6 flex flex-col gap-xs flex-1">
         <div>
-          <h3 className="text-subheading lg:text-subtitle font-medium mb-0">{title}</h3>
+          <h3 className="text-subheading lg:text-subtitle font-medium mb-0">
+            {title}
+          </h3>
         </div>
         <div className="flex flex-col gap-xs lg:hidden">
           <TagList categories={categories} />
@@ -82,7 +84,7 @@ const ProjectCard = ({
           <div className="flex gap-sm project-card-btns mb-sm mt-auto lg:hidden">
             {links}
           </div>
-        </div>  
+        </div>
       </div>
     </motion.article>
   );
