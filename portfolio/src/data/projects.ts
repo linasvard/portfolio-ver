@@ -31,7 +31,7 @@ export const projects = [
         title: "the library.",
         description: "Läs, betygsätt, diskutera. En fullstack-plattform för bokrecensioner med inloggning, adminverktyg och full datahantering.",
         categories: ["Fullstack", "MongoDB", "API", "Express"],
-        github: "https://github.com/linasvard/portfolio",
+        github: "https://github.com/linasvard/the-library",
         demo: "https://this-is-the-library.vercel.app/"
     },
     {
@@ -40,7 +40,7 @@ export const projects = [
         title: "IKEA Escape Room",
         description: "Ett grupprojekt där vi arbetade agilt från idé till färdigt spel. Ett interaktivt varuhusäventyr i fyra rum, byggt ramverkslöst med TypeScript och Sass.",
         categories: ["Front end", "TypeScript", "LocalStorage", "Vite", "Agila metoder"],
-        github: "https://github.com/linasvard/portfolio",
+        github: "https://github.com/linasvard/ikea-escape-room",
         demo: "https://linasvard.github.io/ikea-escape-room/"
     },
     {

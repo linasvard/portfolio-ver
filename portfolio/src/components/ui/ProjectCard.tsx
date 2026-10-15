@@ -5,6 +5,7 @@ import GithubIcon from '../../assets/icons/GithubIcon';
 import LinkIcon from '../../assets/icons/LinkIcon';
 import type { Project } from '../../data/projects';
 import { fadeInUp } from '../../utils/animations';
+import TagList from './TagList';
 
 type ProjectCardProps = Project & { index: number };
 
@@ -54,51 +55,36 @@ const ProjectCard = ({
           className="absolute bottom-0 left-0 right-0 hidden h-full px-md lg:flex flex-col gap-xs py-md bg-accent text-dark"
           variants={{ rest: { y: '100%' }, hover: { y: 0 } }}
           transition={{ duration: 0.3, ease: 'easeInOut' }}>
-          <div>
-            <h3 className="text-subheading font-medium mb-0">{title}</h3>
-          </div>
-          <div className="flex flex-wrap gap-xs text-dark mb-xs">
-            <ul className="flex flex-wrap gap-xs text-dark mb-xs">
-              {categories.map((cat) => (
-                <li
-                  key={cat}
-                  className="text-dark text-sm font-medium not-last:after:content-['/'] not-last:after:px-xs">
-                  {cat}
-                </li>
-              ))}
-            </ul>
-          </div>
+          <p aria-hidden="true" className="text-subheading font-medium mb-0">
+            {title}
+          </p>
+
+          <TagList categories={categories} />
+
           <p className="mb-md max-w-200 text-projectcard font-medium text-dark">
             {description}
           </p>
-          <div></div>
           <div className="flex gap-sm project-card-btns mt-auto w-full justify-center">
             {links}
           </div>
         </motion.div>
       </motion.div>
-    
+
       <div className="px-0 py-6 flex flex-col gap-xs flex-1">
         <div>
-          <h3 className="text-subheading lg:text-subtitle font-medium mb-0">{title}</h3>
+          <h3 className="text-subheading lg:text-subtitle font-medium mb-0">
+            {title}
+          </h3>
         </div>
         <div className="flex flex-col gap-xs lg:hidden">
-          <ul className="flex flex-wrap gap-xs text-dark mb-sm">
-            {categories.map((cat) => (
-              <li
-                key={cat}
-                className="text-dark text-sm font-medium not-last:after:content-['/'] not-last:after:px-xs">
-                {cat}
-              </li>
-            ))}
-          </ul>
+          <TagList categories={categories} />
           <p className="mb-md max-w-200 text-projectcard font-medium text-dark">
             {description}
           </p>
-          <div className="flex gap-sm projects-card-btns mb-sm mt-auto lg:hidden">
+          <div className="flex gap-sm project-card-btns mb-sm mt-auto lg:hidden">
             {links}
           </div>
-        </div>  
+        </div>
       </div>
     </motion.article>
   );
