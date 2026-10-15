@@ -40,7 +40,9 @@ const validate = (contact: Contact): ContactErrors => {
     errors.subject = 'Skriv in en giltig ämnesrad';
   }
 
-  if (contact.phone.trim() && !PHONE_REGEX.test(contact.phone)) {
+  if (!contact.phone.trim()) {
+    errors.phone = 'Skriv in ett telefonnummer';
+  } else if (!PHONE_REGEX.test(contact.phone)) {
     errors.phone = 'Skriv in ett giltigt telefonnummer';
   }
 
