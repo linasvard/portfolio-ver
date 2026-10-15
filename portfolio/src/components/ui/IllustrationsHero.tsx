@@ -2,7 +2,7 @@ import Cat from '../../assets/images/hero/cat.png';
 import Star from '../../assets/images/hero/star.png';
 import Dev from '../../assets/images/hero/dev.png';
 import Mouse from '../../assets/images/hero/mouse.png';
-import Map from '../../assets/images/hero/map.png';
+import Folder from '../../assets/images/hero/map.png';
 
 const IllustrationsHero = () => {
   return (
@@ -32,7 +32,7 @@ const IllustrationsHero = () => {
       />
       <img
         className="lg:w-30 md:w-30 w-17 absolute right-[10%] top-[2%] lg:right-[10%] lg:top-[20%] lg:rotate-12"
-        src={Map}
+        src={Folder}
         alt=""
       />
     </div>
