@@ -2,12 +2,13 @@ type NavbarLinkProps = {
   href: string;
   children: React.ReactNode;
   onClick?: () => void;
+  className?: string;
 };
 
-function NavbarLink({ href, children, onClick }: NavbarLinkProps) {
+function NavbarLink({ href, children, onClick, className }: NavbarLinkProps) {
   return (
-    <li>
-        <a href={href} onClick={onClick} className="text-dark link-underline">
+    <li className="w-full">
+        <a href={href} onClick={onClick} className={`text-dark link-underline ${className || ''}`}>
             {children}
         </a>
     </li>
