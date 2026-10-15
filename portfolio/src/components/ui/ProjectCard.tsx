@@ -51,7 +51,7 @@ const ProjectCard = ({
           className="w-full h-auto object-cover rounded-lg origin-center"
         />
         <motion.div
-          className="absolute bottom-0 left-0 right-0 hidden lg:flex flex-col py-md bg-light text-dark"
+          className="absolute bottom-0 left-0 right-0 hidden h-full px-md lg:flex flex-col py-md bg-accent text-dark"
           variants={{ rest: { y: '100%' }, hover: { y: 0 } }}
           transition={{ duration: 0.3, ease: 'easeInOut' }}>
           <div>
@@ -64,6 +64,12 @@ const ProjectCard = ({
                 </li>
               ))}
             </ul>
+          </div>
+            <p className="mb-md max-w-200 text-projectcard font-medium text-dark">
+              {description}
+            </p>
+          <div>
+
           </div>
           <div className="flex gap-sm project-card-btns mt-auto w-full justify-center">
             {links}
