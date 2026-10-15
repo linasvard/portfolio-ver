@@ -7,9 +7,9 @@ import { fadeInLeft, fadeInRight, rotateRight } from "../../utils/animations";
 const About = () => {
   return (
     <section className="about padding-overall max-width" id="about">
-        <div className="flex mb-xxl flex-col flex-col-reverse gap-lg items-top md:justify-between justify-center lg:flex-row md:gap-md">    
+        <div className="flex mb-xxl flex-col-reverse gap-lg items-center lg:items-start md:justify-between justify-center lg:flex-row md:gap-md">    
             <motion.div 
-            className="max-w-400 md:max-w-300 lg:max-w-200"
+            className="w-full max-w-400 md:max-w-300 lg:max-w-200"
             {...fadeInLeft(0.1)}>
                 <h2 className="text-about font-bold">{" "}<span className="relative inline-block isolate">Vem är jag?<UnderlineAbout className="text-accent" /></span></h2>
                 <p className="font-sans mt-0 mx-1 font-medium mb-md">
@@ -25,7 +25,7 @@ const About = () => {
             {...fadeInRight(0.1)}>
                 <motion.img 
                 {...rotateRight()}
-                className="rounded-lg max-w-full h-auto md:justify-center lg:justify-center"
+                className="rounded-lg max-w-full h-auto mt-[-20px] lg:mt-sm md:justify-center lg:justify-center"
                 src={AboutMeImg} 
                 alt="Bild på Lina" />
             </motion.div>

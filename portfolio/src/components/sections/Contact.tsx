@@ -35,7 +35,7 @@ const Contact = () => {
               <motion.a 
               {...rotateLeft()}
               href="mailto:linajsvard@hotmail.com">
-                <img className="h-30 w-auto object-contain" src={MailIcon} alt="Email" />
+                <img className="max-h-55 w-auto object-contain" src={MailIcon} alt="Email" />
               </motion.a>
               <motion.a
                 {...rotateRight()}
@@ -43,7 +43,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer">
                 <img
-                  className="h-35 w-auto object-contain"
+                  className="max-h-60 w-auto object-contain"
                   src={LinkedinIcon}
                   alt="LinkedIn"
                 />
