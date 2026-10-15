@@ -173,5 +173,5 @@ button {
 
 .hero-container {
 
-  min-height: calc(75vh - var(--spacing-navbar));
+  min-height: calc(65vh - var(--spacing-navbar));
 }
