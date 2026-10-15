@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { AnimatePresence, motion } from "motion/react";
 import { projects } from "../../data/projects"
 import { fadeInUp } from "../../utils/animations";
 import ProjectCard from "../ui/ProjectCard"
@@ -42,10 +42,21 @@ const Projects = () => {
                 </motion.button>
             ))}
         </div>
-        <div className="projects-grid grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 md:gap-y-md lg:gap-y-md">
+        <div className="projects-grid relative grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 md:gap-y-md lg:gap-y-md">
+            <AnimatePresence mode="popLayout" initial={false}>
             {filteredProjects.map((project, index) => (
-                <ProjectCard key={project.id} {...project} index={index}/>
+                <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{ duration: 0.3, ease: 'easeInOut' }} 
+                className="h-full" 
+                key={project.id}
+                layout>
+                    <ProjectCard {...project} index={index}/>
+                </motion.div>
             ))}
+            </AnimatePresence>
         </div>
     </section>
   )
