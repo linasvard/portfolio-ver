@@ -96,7 +96,7 @@
 }
 
 @utility padding-overall {
-  padding: 4rem var(--spacing-md);
+  padding: 4rem 1.5rem;
   @media (min-width: 768px) {
     padding: 4rem var(--spacing-lg);
   }
@@ -141,11 +141,17 @@
 body {
   font-family: var(--font-sans-serif);
   font-weight: var(--font-weight-regular);
-  display: grid;
-  grid-template-rows: auto 1fr auto;
   background-color: var(--color-light);
+  margin: 0;
+  overflow-x: clip;
 }
 
+#root {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto; 
+  grid-template-columns: minmax(0, 1fr);
+}
 
 h2 {
   font-weight: var(--font-weight-medium);
