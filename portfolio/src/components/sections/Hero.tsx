@@ -8,10 +8,10 @@ import IllustrationsComp from "../ui/IllustrationsComp";
 
 const Hero = () => {
   return (
-    <section className="hero max-width padding-overall" id="hero">
+    <section className="hero relative overflow-hidden max-width padding-overall" id="hero">
         <div className="hero-container flex flex-col-reverse md:flex-row gap-md items-center justify-between">
             <motion.div {...fadeInLeft(0.1)}
-            className="w-full min-w-0"> 
+            className="w-full relative z-10 min-w-0"> 
                 <h1 className="lg:text-hero w-full text-hero-mobile leading-tight text-dark">
                     <span className="block text-dark text-xl mb-xs">
                         <span className="font-bold">Hej, </span>Lina heter jag!
