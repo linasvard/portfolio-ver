@@ -2,7 +2,7 @@ import { useState, type ChangeEvent, type SubmitEvent } from 'react';
 import {
   EMAIL_REGEX,
   NAME_REGEX,
-  COMPANY_NAME_REGEX,
+  PHONE_REGEX,
   SUBJECT_REGEX,
 } from '../../utils/regex';
 import { motion, AnimatePresence } from 'motion/react';
@@ -12,7 +12,7 @@ const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xjyvgldj';
 type Contact = {
   name: string;
   email: string;
-  company: string;
+  phone: string;
   subject: string;
   message: string;
 };
@@ -20,7 +20,7 @@ type Contact = {
 const initialContact: Contact = {
   name: '',
   email: '',
-  company: '',
+  phone: '',
   subject: '',
   message: '',
 };
@@ -47,8 +47,8 @@ const validate = (contact: Contact): Errors => {
     errors.subject = 'Skriv in en giltig ämnesrad';
   }
 
-  if (contact.company.trim() && !COMPANY_NAME_REGEX.test(contact.company)) {
-    errors.company = 'Skriv in ett giltigt företagsnamn';
+  if (contact.phone.trim() && !PHONE_REGEX.test(contact.phone)) {
+    errors.phone = 'Skriv in ett giltigt telefonnummer';
   }
 
   if (!contact.message.trim()) {
@@ -141,18 +141,18 @@ const ContactForm = () => {
       </div>
 
       <div className="flex flex-col gap-xs">
-        <label htmlFor="company">Ev. företag</label>
+        <label htmlFor="phone">Telefon</label>
         <input
-          className={errors.company ? 'border-red-500' : ''}
-          value={contact.company}
+          className={errors.phone ? 'border-red-500' : ''}
+          value={contact.phone}
           onChange={(e) => handleChange(e)}
-          aria-invalid={!!errors.company}
-          type="text"
-          id="company"
-          name="company"
+          aria-invalid={!!errors.phone}
+          type="number"
+          id="phone"
+          name="phone"
         />
-        {errors.company && (
-          <span className="text-red-500 text-sm">{errors.company}</span>
+        {errors.phone && (
+          <span className="text-red-500 text-sm">{errors.phone}</span>
         )}
       </div>
 
