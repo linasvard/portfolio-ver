@@ -5,6 +5,10 @@ import GithubIcon from '../../assets/icons/GithubIcon';
 import LinkIcon from '../../assets/icons/LinkIcon';
 import type { Project } from '../../data/projects';
 
+type ProjectCardProps = Project & {
+  index: number;
+};
+
 const ProjectCard = ({
   image,
   title,
@@ -12,7 +16,8 @@ const ProjectCard = ({
   description,
   github,
   demo,
-}: Project) => {
+  index,
+}: ProjectCardProps) => {
 
     const links = (
         <>
@@ -35,8 +40,8 @@ const ProjectCard = ({
     <motion.article
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.15 }}
-      transition={{ duration: 0.6, ease: 'easeOut' }}
+      viewport={{ once: true, amount: 0.10 }}
+      transition={{ duration: 0.6, ease: 'easeOut', delay: index * 0.1 }}
       className="flex flex-col h-full">
       
       <motion.div

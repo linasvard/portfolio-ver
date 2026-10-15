@@ -39,8 +39,8 @@ const Projects = () => {
             ))}
         </div>
         <div className="projects-grid grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 md:gap-y-md lg:gap-y-lg">
-            {filteredProjects.map((project) => (
-                <ProjectCard key={project.id} {...project} />
+            {filteredProjects.map((project, index) => (
+                <ProjectCard key={project.id} {...project} index={index}/>
             ))}
         </div>
     </section>
