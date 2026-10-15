@@ -2,8 +2,8 @@
 import Underline from "../ui/Underline";
 import "../../assets/styles/Hero.css"
 import { motion } from "motion/react";
-import { fadeInLeft, fadeInRight } from "../../utils/animations";
-import IllustrationsComp from "../ui/IllustrationsHero";
+import { fadeInLeft } from "../../utils/animations";
+import IllustrationsHero from "../ui/IllustrationsHero";
 
 
 const Hero = () => {
@@ -19,9 +19,9 @@ const Hero = () => {
                     En{" "}<span className="relative inline-block isolate">multitasker<Underline className="text-accent"/></span>{" "} som älskar design, webb och tillgänglighet.
                 </h1>
             </motion.div>
-            <motion.div {...fadeInRight(0.1)} className="flex justify-center md:justify-center w-full max-w-3xl">
-                <IllustrationsComp />
-            </motion.div>
+            <div className="flex justify-center md:justify-center w-full max-w-3xl">
+                <IllustrationsHero />
+            </div>
         </div> 
         <motion.div {...fadeInLeft(0.1)} className="flex justify-left mt-lg">
             <a href="#projects" className="link-underline text-dark font-medium text-lg">
