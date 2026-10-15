@@ -7,7 +7,7 @@ type NavbarLinkProps = {
 
 function NavbarLink({ href, children, onClick, className }: NavbarLinkProps) {
   return (
-    <li className="w-full">
+    <li className="w-full md:w-auto">
         <a href={href} onClick={onClick} className={`text-dark link-underline ${className || ''}`}>
             {children}
         </a>

@@ -57,7 +57,7 @@ const Navbar = () => {
           isOpen ? 'max-h-full' : 'max-h-0'
         }`}
         inert={!isOpen}>
-        <ul className="flex flex-col gap-md px-md py-lg text-dark font-medium text-center">
+        <ul className="flex flex-col gap-md px-md py-lg text-dark font-medium">
           {navbarLinks.map((link) => (
             <NavbarLink 
             key={link.href} 
