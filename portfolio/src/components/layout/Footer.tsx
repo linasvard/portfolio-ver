@@ -2,8 +2,8 @@ import CvIcon from '../../assets/icons/CvIcon';
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-light p-md">
-      <div className="p-md flex flex-col md:gap-md md:flex-row justify-between gap-lg max-width mx-auto">
+    <footer className="bg-dark text-light">
+      <div className="flex max-width padding-overall flex-col md:gap-md md:flex-row justify-between gap-lg max-width mx-auto">
         <div className="flex flex-col gap-md max-w-70">
           <div>
             <p className="font-bold">Based in:</p>
@@ -51,7 +51,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="mt-md max-width flex flex-col gap-md md:flex-row justify-between items-center px-md py-sm text-left">
+      <div className="mt-md max-width padding-overall pt-0 flex flex-col gap-md md:flex-row justify-between items-center text-left">
         <p className="text-light/50">
           &copy; {new Date().getFullYear()} Lina Svärd. All rights reserved.
         </p>

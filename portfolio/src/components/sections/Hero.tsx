@@ -8,9 +8,10 @@ const Hero = () => {
   return (
     <section className="hero max-width padding-overall" id="hero">
         <div className="hero-container flex flex-col-reverse md:flex-row gap-md items-center justify-between">
-            <motion.div {...fadeInLeft(0.1)}> 
-                <h1 className="text-hero w-full leading-tight">
-                    <span className="block text-dark text-2xl">
+            <motion.div {...fadeInLeft(0.1)}
+            className="w-full min-w-0"> 
+                <h1 className="lg:text-hero w-full text-hero-mobile leading-tight text-dark">
+                    <span className="block text-dark text-xl mb-xs">
                         <span className="font-bold">Hej, </span>Lina heter jag!
                     </span>
                     En{" "}<span className="relative inline-block isolate">multitasker<Underline className="text-accent"/></span>{" "} som älskar design, webb och tillgänglighet.

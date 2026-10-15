@@ -12,12 +12,14 @@
 
   /*Text sizes*/
   --text-hero: 4.5rem;
+  --text-hero-mobile: 2.5rem;
   --text-heading: 2rem;
   --text-about: 3.7rem;
   --text-subheading: 1.8rem;
   --text-body: 1rem;
   --text-caption: 0.875rem;
   --text-subtitle: 1.2rem;
+  --text-about-mobile: 1.8rem;
 
   /*Color styles*/
   --color-light: #FDFAF5;
@@ -96,9 +98,9 @@
 }
 
 @utility padding-overall {
-  padding: 4rem var(--spacing-md);
+  padding: 4rem 1.5rem;
   @media (min-width: 768px) {
-    padding: 4rem var(--spacing-lg);
+    padding: 4rem var(--spacing-md);
   }
   @media (min-width: 1024px) {
     padding: 4rem var(--spacing-section);
@@ -141,11 +143,17 @@
 body {
   font-family: var(--font-sans-serif);
   font-weight: var(--font-weight-regular);
-  display: grid;
-  grid-template-rows: auto 1fr auto;
   background-color: var(--color-light);
+  margin: 0;
+  overflow-x: clip;
 }
 
+#root {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto; 
+  grid-template-columns: minmax(0, 1fr);
+}
 
 h2 {
   font-weight: var(--font-weight-medium);
