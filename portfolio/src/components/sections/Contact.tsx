@@ -14,7 +14,7 @@ const Contact = () => {
       id="contact">
       <div 
       className="padding-overall max-width grid grid-cols-1 lg:grid-cols-[2fr_3fr] md:gap-xxl gap-md items-start">
-        <motion.div {...fadeInLeft(0.1)} className="flex flex-col gap-md lg:max-w-[500px] max-w-full">
+        <motion.div {...fadeInLeft(0.1)} className="flex flex-col gap-sm lg:max-w-[500px] max-w-full">
           <div className="flex flex-col gap-sm">
             <h2 className="font-bold text-heading">Let's get in touch</h2>
             <p>
@@ -31,16 +31,16 @@ const Contact = () => {
             />
           </div>
           <div>
-            <address className="grid grid-cols-2 gap-sm items-center">
+            <address className="grid grid-cols-2 gap-sm mt-[-10px] items-center">
               <a href="mailto:linajsvard@hotmail.com">
-                <img className="h-30 w-auto" src={MailIcon} alt="Email" />
+                <img className="h-30 w-auto object-contain" src={MailIcon} alt="Email" />
               </a>
               <a
                 href="https://www.linkedin.com/in/linajsvard/"
                 target="_blank"
                 rel="noopener noreferrer">
                 <img
-                  className="h-35 w-auto"
+                  className="h-35 w-auto object-contain"
                   src={LinkedinIcon}
                   alt="LinkedIn"
                 />
