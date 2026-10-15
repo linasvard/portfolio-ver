@@ -1,28 +1,30 @@
 import HeroImg from "../../assets/images/hero-img.png";
 import Underline from "../ui/Underline";
 import "../../assets/styles/Hero.css"
+import { motion } from "motion/react";
+import { fadeInLeft, fadeInRight } from "../../utils/animations";
 
 const Hero = () => {
   return (
     <section className="hero max-width padding-overall" id="hero">
         <div className="hero-container flex flex-col-reverse md:flex-row gap-md items-center justify-between">
-            <div> 
+            <motion.div {...fadeInLeft(0.1)}> 
                 <h1 className="text-hero w-full leading-tight">
                     <span className="block text-dark text-2xl">
                         <span className="font-bold">Hej, </span>Lina heter jag!
                     </span>
                     En{" "}<span className="relative inline-block isolate">multitasker<Underline className="text-accent"/></span>{" "} som älskar design, webb och tillgänglighet.
                 </h1>
-            </div>
-            <div className="flex justify-center md:justify-center w-full max-w-3xl">
+            </motion.div>
+            <motion.div {...fadeInRight(0.1)} className="flex justify-center md:justify-center w-full max-w-3xl">
                 <img src={HeroImg} alt="Illustration av kvinna som sitter framför en dator" />
-            </div>
+            </motion.div>
         </div> 
-        <div className="flex justify-left mt-lg">
+        <motion.div {...fadeInLeft(0.1)} className="flex justify-left mt-lg">
             <a href="#projects" className="link-underline text-dark font-medium text-lg">
                 Se mina projekt nedan.
             </a>
-        </div>      
+        </motion.div>      
     </section>
   );
 };
