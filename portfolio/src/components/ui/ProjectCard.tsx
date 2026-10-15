@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 import GithubIcon from '../../assets/icons/GithubIcon';
 import LinkIcon from '../../assets/icons/LinkIcon';
 import type { Project } from '../../data/projects';
+import { fadeInUp } from '../../utils/animations';
 
 type ProjectCardProps = Project & {
   index: number;
@@ -38,10 +39,7 @@ const ProjectCard = ({
 
   return (
     <motion.article
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.10 }}
-      transition={{ duration: 0.6, ease: 'easeOut', delay: index * 0.1 }}
+      {...fadeInUp((index % 2) * 0.15)}
       className="flex flex-col h-full">
       
       <motion.div
