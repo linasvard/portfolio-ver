@@ -3,7 +3,7 @@ import Underline from "../ui/Underline";
 import "../../assets/styles/Hero.css"
 import { motion } from "motion/react";
 import { fadeInLeft, fadeInRight } from "../../utils/animations";
-import IllustrationsComp from "../ui/IllustrationsComp";
+import IllustrationsComp from "../ui/IllustrationsHero";
 
 
 const Hero = () => {
