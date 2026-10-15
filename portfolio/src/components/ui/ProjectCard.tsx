@@ -20,13 +20,13 @@ const ProjectCard = ({
   const links = (
     <>
       <ExternalLink
-        className="demo-link"
+        className="demo-link bg-dark text-accent hover:bg-light hover:text-dark"
         href={demo}
         icon={<LinkIcon className="w-5 h-5" />}>
         Demo
       </ExternalLink>
       <ExternalLink
-        className="github-link"
+        className="github-link bg-dark text-accent hover:bg-light hover:text-dark"
         href={github}
         icon={<GithubIcon className="w-5 h-5" />}>
         Github
