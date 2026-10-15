@@ -5,6 +5,7 @@ import GithubIcon from '../../assets/icons/GithubIcon';
 import LinkIcon from '../../assets/icons/LinkIcon';
 import type { Project } from '../../data/projects';
 import { fadeInUp } from '../../utils/animations';
+import TagList from './TagList';
 
 type ProjectCardProps = Project & { index: number };
 
@@ -58,15 +59,7 @@ const ProjectCard = ({
             <h3 className="text-subheading font-medium mb-0">{title}</h3>
           </div>
           <div className="flex flex-wrap gap-xs text-dark mb-xs">
-            <ul className="flex flex-wrap gap-xs text-dark mb-xs">
-              {categories.map((cat) => (
-                <li
-                  key={cat}
-                  className="text-dark text-sm font-medium not-last:after:content-['/'] not-last:after:px-xs">
-                  {cat}
-                </li>
-              ))}
-            </ul>
+            <TagList categories={categories} />
           </div>
           <p className="mb-md max-w-200 text-projectcard font-medium text-dark">
             {description}
@@ -83,15 +76,7 @@ const ProjectCard = ({
           <h3 className="text-subheading lg:text-subtitle font-medium mb-0">{title}</h3>
         </div>
         <div className="flex flex-col gap-xs lg:hidden">
-          <ul className="flex flex-wrap gap-xs text-dark mb-sm">
-            {categories.map((cat) => (
-              <li
-                key={cat}
-                className="text-dark text-sm font-medium not-last:after:content-['/'] not-last:after:px-xs">
-                {cat}
-              </li>
-            ))}
-          </ul>
+          <TagList categories={categories} />
           <p className="mb-md max-w-200 text-projectcard font-medium text-dark">
             {description}
           </p>
