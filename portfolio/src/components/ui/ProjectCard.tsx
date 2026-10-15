@@ -51,10 +51,13 @@ const ProjectCard = ({
           className="w-full h-auto object-cover rounded-lg origin-center"
         />
         <motion.div
-          className="absolute bottom-0 left-0 right-0 hidden h-full px-md lg:flex flex-col py-md bg-accent text-dark"
+          className="absolute bottom-0 left-0 right-0 hidden h-full px-md lg:flex flex-col gap-xs py-md bg-accent text-dark"
           variants={{ rest: { y: '100%' }, hover: { y: 0 } }}
           transition={{ duration: 0.3, ease: 'easeInOut' }}>
           <div>
+            <h3 className="text-subheading font-medium mb-0">{title}</h3>
+          </div>
+          <div className="flex flex-wrap gap-xs text-dark mb-xs">
             <ul className="flex flex-wrap gap-xs text-dark mb-xs">
               {categories.map((cat) => (
                 <li
@@ -65,32 +68,18 @@ const ProjectCard = ({
               ))}
             </ul>
           </div>
-            <p className="mb-md max-w-200 text-projectcard font-medium text-dark">
-              {description}
-            </p>
-          <div>
-
-          </div>
+          <p className="mb-md max-w-200 text-projectcard font-medium text-dark">
+            {description}
+          </p>
+          <div></div>
           <div className="flex gap-sm project-card-btns mt-auto w-full justify-center">
             {links}
           </div>
         </motion.div>
       </motion.div>
 
-      <div className="px-0 py-6 flex flex-col gap-xs flex-1">
-        <ul className="flex flex-wrap gap-xs text-dark mb-xs">
-          {categories.map((cat) => (
-            <li
-              key={cat}
-              className="text-dark text-sm font-medium not-last:after:content-['/'] not-last:after:px-xs">
-              {cat}
-            </li>
-          ))}
-        </ul>
-        <h3 className="text-subheading font-medium mb-0">{title}</h3>
-        <p className="mb-md max-w-200 text-projectcard font-medium text-dark">
-          {description}
-        </p>
+      <div className="px-0 py-6 flex flex-col gap-0 flex-1">
+        <h3 className="text-xl font-medium mb-0">{title}</h3>
         <div className="flex gap-sm projects-card-btns mt-auto lg:hidden">
           {links}
         </div>
