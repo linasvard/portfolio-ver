@@ -147,7 +147,7 @@ const ContactForm = () => {
           value={contact.phone}
           onChange={(e) => handleChange(e)}
           aria-invalid={!!errors.phone}
-          type="number"
+          type="tel"
           id="phone"
           name="phone"
         />
