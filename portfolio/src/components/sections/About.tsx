@@ -12,7 +12,7 @@ const About = () => {
             className="max-w-400 md:max-w-300 lg:max-w-200"
             {...fadeInLeft(0.1)}>
                 <h2 className="text-about font-bold">{" "}<span className="relative inline-block isolate">Vem är jag?<UnderlineAbout className="text-accent" /></span></h2>
-                <p className="font-sans mt-0 mx-1 font-medium text-md mb-md">
+                <p className="font-sans mt-0 mx-1 font-medium mb-md">
                     Designern som blev utvecklare
                 </p>
                 <p className="mt-md mx-1 text-big-p">
