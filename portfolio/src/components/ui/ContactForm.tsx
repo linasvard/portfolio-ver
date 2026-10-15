@@ -7,6 +7,7 @@ import {
 } from '../../utils/regex';
 import { motion, AnimatePresence } from 'motion/react';
 import type { Contact, ContactErrors } from '../../types/contact';  
+import FormField from './FormField';
 
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xjyvgldj';
 
@@ -98,88 +99,50 @@ const ContactForm = () => {
       onSubmit={handleSubmit}
       noValidate
       className="grid grid-cols-1 md:grid-cols-2 gap-sm">
-      <div className="flex flex-col gap-xs">
-        <label htmlFor="name">Namn*</label>
-        <input
-          className={errors.name ? 'border-red-500' : ''}
-          value={contact.name}
-          onChange={(e) => handleChange(e)}
-          aria-invalid={!!errors.name}
-          type="text"
-          id="name"
-          name="name"
-          required
-        />
-        {errors.name && (
-          <span className="text-red-500 text-sm">{errors.name}</span>
-        )}
-      </div>
+      <FormField
+       name="name"
+       type="tel"
+       label="Namn*"
+       value={contact.name}
+       error={errors.name}
+       onChange={handleChange}
+      />
+  
+      <FormField
+      name="email"
+      type="email"
+      label="E-post*"
+      value={contact.email}
+      error={errors.email}
+      onChange={handleChange}
+      />
 
-      <div className="flex flex-col gap-xs">
-        <label htmlFor="email">E-post*</label>
-        <input
-          className={errors.email ? 'border-red-500' : ''}
-          value={contact.email}
-          onChange={(e) => handleChange(e)}
-          aria-invalid={!!errors.email}
-          type="email"
-          id="email"
-          name="email"
-          required
-        />
-        {errors.email && (
-          <span className="text-red-500 text-sm">{errors.email}</span>
-        )}
-      </div>
+      <FormField
+      name="phone"
+      label="Telefon"
+      value={contact.phone}
+      error={errors.phone}
+      onChange={handleChange}
+      />
 
-      <div className="flex flex-col gap-xs">
-        <label htmlFor="phone">Telefon</label>
-        <input
-          className={errors.phone ? 'border-red-500' : ''}
-          value={contact.phone}
-          onChange={(e) => handleChange(e)}
-          aria-invalid={!!errors.phone}
-          type="tel"
-          id="phone"
-          name="phone"
-        />
-        {errors.phone && (
-          <span className="text-red-500 text-sm">{errors.phone}</span>
-        )}
-      </div>
+      <FormField
+      name="subject"
+      label="Ämne*"
+      value={contact.subject}
+      error={errors.subject}
+      onChange={handleChange}
+      />
 
-      <div className="flex flex-col gap-xs">
-        <label htmlFor="subject">Ämne*</label>
-        <input
-          className={errors.subject ? 'border-red-500' : ''}
-          value={contact.subject}
-          onChange={(e) => handleChange(e)}
-          aria-invalid={!!errors.subject}
-          type="text"
-          id="subject"
-          name="subject"
-          required
+      <FormField
+      name="message"
+      label="Meddelande*"
+      multiline
+      className="md:col-span-2"
+      value={contact.message}
+      error={errors.message}
+      onChange={handleChange}
         />
-        {errors.subject && (
-          <span className="text-red-500 text-sm">{errors.subject}</span>
-        )}
-      </div>
-
-      <div className="flex flex-col gap-xs md:col-span-2">
-        <label htmlFor="message">Meddelande*</label>
-        <textarea
-          className={errors.message ? 'border-red-500' : ''}
-          value={contact.message}
-          onChange={(e) => handleChange(e)}
-          aria-invalid={!!errors.message}
-          id="message"
-          name="message"
-          rows={5}
-          required></textarea>
-        {errors.message && (
-          <span className="text-red-500 text-sm">{errors.message}</span>
-        )}
-      </div>
+      
 
       <div className="md:col-span-2 flex flex-col gap-xs">
         <div className="flex items-center">
