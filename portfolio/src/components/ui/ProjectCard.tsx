@@ -20,13 +20,13 @@ const ProjectCard = ({
   const links = (
     <>
       <ExternalLink
-        className="demo-link bg-dark text-accent hover:bg-light hover:text-dark"
+        className="demo-link"
         href={demo}
         icon={<LinkIcon className="w-5 h-5" />}>
         Demo
       </ExternalLink>
       <ExternalLink
-        className="github-link bg-dark text-accent hover:bg-light hover:text-dark"
+        className="github-link"
         href={github}
         icon={<GithubIcon className="w-5 h-5" />}>
         Github
@@ -77,12 +77,28 @@ const ProjectCard = ({
           </div>
         </motion.div>
       </motion.div>
-
-      <div className="px-0 py-6 flex flex-col gap-0 flex-1">
-        <h3 className="text-xl font-medium mb-0">{title}</h3>
-        <div className="flex gap-sm projects-card-btns mt-auto lg:hidden">
-          {links}
+    
+      <div className="px-0 py-6 flex flex-col gap-xs flex-1">
+        <div>
+          <h3 className="text-subheading lg:text-subtitle font-medium mb-0">{title}</h3>
         </div>
+        <div className="flex flex-col gap-xs lg:hidden">
+          <ul className="flex flex-wrap gap-xs text-dark mb-sm">
+            {categories.map((cat) => (
+              <li
+                key={cat}
+                className="text-dark text-sm font-medium not-last:after:content-['/'] not-last:after:px-xs">
+                {cat}
+              </li>
+            ))}
+          </ul>
+          <p className="mb-md max-w-200 text-projectcard font-medium text-dark">
+            {description}
+          </p>
+          <div className="flex gap-sm projects-card-btns mb-sm mt-auto lg:hidden">
+            {links}
+          </div>
+        </div>  
       </div>
     </motion.article>
   );
