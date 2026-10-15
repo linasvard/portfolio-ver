@@ -4,6 +4,7 @@ import "../../assets/styles/Hero.css"
 import { motion } from "motion/react";
 import { fadeInLeft, fadeInRight } from "../../utils/animations";
 
+
 const Hero = () => {
   return (
     <section className="hero max-width padding-overall" id="hero">
