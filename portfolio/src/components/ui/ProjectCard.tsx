@@ -79,7 +79,7 @@ const ProjectCard = ({
           <p className="mb-md max-w-200 text-projectcard font-medium text-dark">
             {description}
           </p>
-          <div className="flex gap-sm projects-card-btns mb-sm mt-auto lg:hidden">
+          <div className="flex gap-sm project-card-btns mb-sm mt-auto lg:hidden">
             {links}
           </div>
         </div>  
