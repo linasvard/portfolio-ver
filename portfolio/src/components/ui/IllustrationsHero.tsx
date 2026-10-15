@@ -17,7 +17,7 @@ const illustrations: Illustration[] = [
     {
         name: 'cat',
         src: Cat,
-        className: 'lg:w-100 md:w-80 w-65 absolute md:right-[0] right-[6%] bottom-[20%] md:right-[5%] lg:bottom-[1%] md:bottom-[15%]',
+        className: 'lg:w-85 md:w-80 w-65 absolute md:right-[0] right-[6%] bottom-[20%] md:right-[5%] lg:bottom-[9%] md:bottom-[15%]',
         animation: rotateRight()
     },
     {
