@@ -1,8 +1,9 @@
-import HeroImg from "../../assets/images/hero-img.png";
+
 import Underline from "../ui/Underline";
 import "../../assets/styles/Hero.css"
 import { motion } from "motion/react";
 import { fadeInLeft, fadeInRight } from "../../utils/animations";
+import IllustrationsComp from "../ui/IllustrationsComp";
 
 
 const Hero = () => {
@@ -19,7 +20,7 @@ const Hero = () => {
                 </h1>
             </motion.div>
             <motion.div {...fadeInRight(0.1)} className="flex justify-center md:justify-center w-full max-w-3xl">
-                <img src={HeroImg} alt="Illustration av kvinna som sitter framför en dator" />
+                <IllustrationsComp />
             </motion.div>
         </div> 
         <motion.div {...fadeInLeft(0.1)} className="flex justify-left mt-lg">
