@@ -6,16 +6,9 @@ import {
   SUBJECT_REGEX,
 } from '../../utils/regex';
 import { motion, AnimatePresence } from 'motion/react';
+import type { Contact, ContactErrors } from '../../types/contact';  
 
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xjyvgldj';
-
-type Contact = {
-  name: string;
-  email: string;
-  phone: string;
-  subject: string;
-  message: string;
-};
 
 const initialContact: Contact = {
   name: '',
@@ -25,10 +18,9 @@ const initialContact: Contact = {
   message: '',
 };
 
-type Errors = Partial<Record<keyof Contact, string>>;
 
-const validate = (contact: Contact): Errors => {
-  const errors: Errors = {};
+const validate = (contact: Contact): ContactErrors => {
+  const errors: ContactErrors = {};
   if (!contact.name.trim()) {
     errors.name = 'Skriv in ditt namn';
   } else if (!NAME_REGEX.test(contact.name)) {
@@ -59,7 +51,7 @@ const validate = (contact: Contact): Errors => {
 
 const ContactForm = () => {
   const [contact, setContact] = useState<Contact>(initialContact);
-  const [errors, setErrors] = useState<Errors>({});
+  const [errors, setErrors] = useState<ContactErrors>({});
   const [isSending, setIsSending] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [sendError, setSendError] = useState<string | null>(null);
