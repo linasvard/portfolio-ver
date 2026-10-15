@@ -4,6 +4,11 @@ import { motion } from 'motion/react';
 import GithubIcon from '../../assets/icons/GithubIcon';
 import LinkIcon from '../../assets/icons/LinkIcon';
 import type { Project } from '../../data/projects';
+import { fadeInUp } from '../../utils/animations';
+
+type ProjectCardProps = Project & {
+  index: number;
+};
 
 const ProjectCard = ({
   image,
@@ -12,7 +17,8 @@ const ProjectCard = ({
   description,
   github,
   demo,
-}: Project) => {
+  index,
+}: ProjectCardProps) => {
 
     const links = (
         <>
@@ -33,10 +39,7 @@ const ProjectCard = ({
 
   return (
     <motion.article
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.15 }}
-      transition={{ duration: 0.6, ease: 'easeOut' }}
+      {...fadeInUp((index % 2) * 0.15)}
       className="flex flex-col h-full">
       
       <motion.div
@@ -81,8 +84,8 @@ const ProjectCard = ({
             </li>
           ))}
         </ul>
-        <h3 className="text-subheading font-medium mb-xs">{title}</h3>
-        <p className="mb-md max-w-200 text-projectcard text-dark/80">{description}</p>
+        <h3 className="text-subheading font-medium mb-0">{title}</h3>
+        <p className="mb-md max-w-200 text-projectcard font-medium text-dark">{description}</p>
         <div className="flex gap-sm projects-card-btns mt-auto lg:hidden">
           {links}
         </div>

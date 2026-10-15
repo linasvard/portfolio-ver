@@ -13,7 +13,7 @@ export const projects = [
         id: 1,
         image: "/src/assets/images/make-it-pop-p.gif",
         title: "Make It Pop!",
-        description: "Vektorgrafik i rörelse. En handgjord SVG animerad med GSAP, ramverkslöst med vanilla JavaScript och Vite.",
+        description: "Vektorgrafik i rörelse. SVG animerad med GSAP gjort för ett skolprojekt.",
         categories: ["Front end", "GSAP", "SVG", "Animation"],
         github: "https://github.com/linasvard/make-it-pop",
         demo: "https://linasvard.github.io/make-it-pop/"
