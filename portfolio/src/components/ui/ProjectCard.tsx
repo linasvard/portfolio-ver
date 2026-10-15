@@ -64,7 +64,6 @@ const ProjectCard = ({
           <p className="mb-md max-w-200 text-projectcard font-medium text-dark">
             {description}
           </p>
-          <div></div>
           <div className="flex gap-sm project-card-btns mt-auto w-full justify-center">
             {links}
           </div>
