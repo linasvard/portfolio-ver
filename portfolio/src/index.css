@@ -12,6 +12,7 @@
 
   /*Text sizes*/
   --text-hero: 4.5rem;
+  --text-hero-mobile: 2.5rem;
   --text-heading: 2rem;
   --text-about: 3.7rem;
   --text-subheading: 1.8rem;
@@ -98,7 +99,7 @@
 @utility padding-overall {
   padding: 4rem 1.5rem;
   @media (min-width: 768px) {
-    padding: 4rem var(--spacing-lg);
+    padding: 4rem var(--spacing-md);
   }
   @media (min-width: 1024px) {
     padding: 4rem var(--spacing-section);
