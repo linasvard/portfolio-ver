@@ -42,7 +42,7 @@ const ProjectCard = ({
         initial="rest"
         animate="rest"
         whileHover="hover"
-        className="overflow-hidden rounded-lg relative block">
+        className="overflow-hidden mb-[-0.5rem] rounded-lg relative block">
         <motion.img
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.45, ease: 'easeInOut' }}
