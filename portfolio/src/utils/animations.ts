@@ -20,3 +20,13 @@ export const fadeInRight = (delay = 0): MotionProps => ({
   viewport: { once: true, amount: 0.15 },
   transition: { duration: 0.6, ease: 'easeOut', delay },
 });
+
+export const rotateRight = (): MotionProps => ({
+    whileHover: { rotate: 6, scale: 1.02 },
+    transition: { duration: 0.45, ease: "easeInOut" }
+});
+
+export const rotateLeft = (): MotionProps => ({
+    whileHover: { rotate: -6, scale: 1.02 },
+    transition: { duration: 0.45, ease: "easeInOut" }
+});

@@ -2,7 +2,7 @@ import WigglyLine from '../../assets/images/wiggly-line.png';
 import MailIcon from '../../assets/icons/mail-icon.png';
 import LinkedinIcon from '../../assets/icons/linkedin-icon.png';
 import { motion } from 'motion/react';
-import { fadeInLeft, fadeInRight } from '../../utils/animations';
+import { fadeInLeft, fadeInRight, rotateLeft, rotateRight } from '../../utils/animations';
 
 import '../../assets/styles/Contact.css';
 import ContactForm from '../ui/ContactForm';
@@ -32,11 +32,14 @@ const Contact = () => {
           </div>
           <div>
             <address className="grid grid-cols-2 gap-sm mt-[-10px] items-center">
-              <a href="mailto:linajsvard@hotmail.com">
+              <motion.a 
+              {...rotateLeft()}
+              href="mailto:linajsvard@hotmail.com">
                 <img className="h-30 w-auto object-contain" src={MailIcon} alt="Email" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/linajsvard/"
+              </motion.a>
+              <motion.a
+                {...rotateRight()}
+                href="https://www.linkedin.com/in/lina-sv%C3%A4rd-b04a12109/"
                 target="_blank"
                 rel="noopener noreferrer">
                 <img
@@ -44,7 +47,7 @@ const Contact = () => {
                   src={LinkedinIcon}
                   alt="LinkedIn"
                 />
-              </a>
+              </motion.a>
             </address>
           </div>
         </motion.div>

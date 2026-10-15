@@ -2,7 +2,7 @@ import AboutMeImg from "../../assets/images/lina-polaroid.png";
 import { motion } from "motion/react"
 import UnderlineAbout from "../ui/UnderlineAbout";
 import Skills from "./Skills";
-import { fadeInLeft, fadeInRight } from "../../utils/animations";
+import { fadeInLeft, fadeInRight, rotateRight } from "../../utils/animations";
 
 const About = () => {
   return (
@@ -24,8 +24,7 @@ const About = () => {
             className="flex justify-center h-full md:justify-center lg:justify-center sm:max-w-400 md:max-w-300 lg:max-w-200"
             {...fadeInRight(0.1)}>
                 <motion.img 
-                whileHover={{ rotate: 8, scale: 1.02 }}
-                transition={{ duration: 0.45, ease: "easeInOut"}}
+                {...rotateRight()}
                 className="rounded-lg max-w-full h-auto md:justify-center lg:justify-center"
                 src={AboutMeImg} 
                 alt="Bild på Lina" />
