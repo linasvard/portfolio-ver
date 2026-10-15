@@ -3,6 +3,7 @@ import "../../assets/styles/Navbar.css"
 import NavbarLink from "../ui/NavbarLink"
 import { useState } from "react"
 import Logo from "../../assets/images/lina-logo.png"
+import HamburgerIcon from "../../assets/images/hamburger-icon.png"
 
 const navbarLinks = [
   { name: "Projekt", href: "#projects" },
@@ -40,9 +41,7 @@ const Navbar = () => {
                     aria-label={isOpen ? "Stäng meny" : "Öppna meny"}
                     aria-expanded={isOpen}
                 >
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
+                    <img src={HamburgerIcon} alt="Meny ikon" className="h-8 w-full object-contain" />
                 </button>
 
 
