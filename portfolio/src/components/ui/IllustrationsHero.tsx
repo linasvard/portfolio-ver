@@ -11,27 +11,27 @@ const IllustrationsHero = () => {
     className="absolute inset-0 max-width"
     >
       <img
-        className="w-100 absolute right-[10%] bottom-[20%] md:right-[5%] md:bottom-[15%]"
+        className="lg:w-100 md:w-80 w-65 absolute md:right-[0] right-[6%] bottom-[20%] md:right-[5%] md:bottom-[15%]"
         src={Cat}
         alt=""
       />
       <img
-        className="w-20 absolute right-[28%] top-[40%]"
+        className="md:w-20 w-14 absolute md:right-[35%] md:bottom-[40%] right-[16%] bottom-[44%] lg:right-[28%] lg:top-[40%]"
         src={Star}
         alt=""
       />
       <img
-        className="w-45 absolute left-[45%] bottom-[29%]"
+        className="md:w-45 w-30 absolute left-[10%] bottom-[38%] rotate-12 md:bottom-[60%] md:left-[60%] lg:left-[50%] lg:bottom-[29%]"
         src={Dev}
         alt=""
       />
       <img
-        className="w-9 absolute right-[40%] top-[15%]"
+        className="lg:w-9 md:w-8 w-5 absolute md:right-[50%] md:top-[10%] right-[34%] top-5%] lg:right-[40%] lg:top-[15%]"
         src={Mouse}
         alt=""
       />
       <img
-        className="w-30 absolute right-[10%] top-[20%] rotate-12"
+        className="lg:w-30 md:w-30 w-17 absolute right-[10%] top-[2%] lg:right-[10%] lg:top-[20%] lg:rotate-12"
         src={Map}
         alt=""
       />

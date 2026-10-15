@@ -9,7 +9,7 @@ import IllustrationsComp from "../ui/IllustrationsHero";
 const Hero = () => {
   return (
     <section className="hero relative overflow-hidden max-width padding-overall" id="hero">
-        <div className="hero-container flex flex-col-reverse md:flex-row gap-md items-center justify-between">
+        <div className="hero-container flex flex-col md:flex-row gap-md items-center justify-between">
             <motion.div {...fadeInLeft(0.1)}
             className="w-full relative z-10 min-w-0"> 
                 <h1 className="lg:text-hero w-full text-hero-mobile leading-tight text-dark">
