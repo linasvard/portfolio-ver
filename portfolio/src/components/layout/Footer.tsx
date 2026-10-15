@@ -31,19 +31,19 @@ const Footer = () => {
             <p className="font-bold">Kontakt</p>
             <a
               className="link-underline-light w-fit"
-              href="mailto:your-email@example.com">
+              href="mailto:linajsvard@hotmail.com">
               Mail
             </a>
             <a
               className="link-underline-light w-fit"
-              href="linkedin.com/in/your-profile"
+              href="https://www.linkedin.com/in/lina-sv%C3%A4rd-b04a12109/"
               target="_blank"
               rel="noopener noreferrer">
               LinkedIn
             </a>
             <a
               className="link-underline-light w-fit"
-              href="github.com/your-profile"
+              href="https://github.com/linasvard"
               target="_blank"
               rel="noopener noreferrer">
               GitHub
