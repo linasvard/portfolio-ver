@@ -103,7 +103,7 @@ const ContactForm = () => {
       className="grid grid-cols-1 md:grid-cols-2 gap-sm">
       <FormField
        name="name"
-       type="tel"
+       type="text"
        label="Namn*"
        value={contact.name}
        error={errors.name}
@@ -121,6 +121,7 @@ const ContactForm = () => {
 
       <FormField
       name="phone"
+      type="tel"
       label="Telefon"
       value={contact.phone}
       error={errors.phone}
@@ -129,6 +130,7 @@ const ContactForm = () => {
 
       <FormField
       name="subject"
+      type="text"
       label="Ämne*"
       value={contact.subject}
       error={errors.subject}
