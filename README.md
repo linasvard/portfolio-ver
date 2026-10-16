@@ -110,7 +110,6 @@ Om det är något jag hade gjort annorlunda med denna uppgift så är det att pl
 
 ### AI-verktyg
 
+![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white)
 
 Jag har använt **Claude** som stöd under arbetet. Claude har granskat koden mot kraven, förklarat begrepp relaterat till state och layout-animationer, och guidat mig steg för steg genom refaktoreringar som exempelvis FormField. Claude har också gett feedback på README-texten. Koden och texterna har jag skrivit själv.
-
-![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white)
