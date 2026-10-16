@@ -17,14 +17,12 @@
   --text-about: 3.7rem;
   --text-subheading: 1.8rem;
   --text-body: 1rem;
-  --text-caption: 0.875rem;
   --text-subtitle: 1.2rem;
   --text-about-mobile: 1.8rem;
 
   /*Color styles*/
   --color-light: #FDFAF5;
   --color-dark: #141015;
-  --color-faded: #433844;
   --color-accent: #CAEA96;
   --color-danger: #e64242;
   --color-success: #04a336;
@@ -150,7 +148,6 @@ body {
   font-weight: var(--font-weight-regular);
   background-color: var(--color-light);
   margin: 0;
-  overflow-x: clip;
 }
 
 #root {
@@ -164,20 +161,12 @@ h2 {
   font-weight: var(--font-weight-medium);
 }
 
-section,
-.contact {
-
+section {
   width: 100%;
 }
 
 button {
   cursor: pointer;
-}
-
-.highlight {
-  font-family: var(--font-sans-serif);
-  font-size: 2rem;
-
 }
 
 .main-heading {

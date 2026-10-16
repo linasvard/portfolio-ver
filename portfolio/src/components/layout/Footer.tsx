@@ -1,4 +1,6 @@
 import CvIcon from '../../assets/icons/CvIcon';
+import { contactInfo } from '../../data/contact';
+import { navbarLinks } from '../../data/navigation';
 
 const Footer = () => {
   return (
@@ -17,33 +19,32 @@ const Footer = () => {
         <div className="flex flex-row gap-md md:gap-xl justify-between">
           <div className="flex flex-col gap-xs">
             <p className="font-bold">Lina Svärd</p>
-            <a className="link-underline-light w-fit" href="#projects">
-              Projekt
-            </a>
-            <a className="link-underline-light w-fit" href="#about">
-              Om mig
-            </a>
-            <a className="link-underline-light w-fit" href="#contact">
-              Kontakt
-            </a>
+            {navbarLinks.map((link) => (
+              <a key={link.href} className="link-underline-light w-fit" href={link.href}>
+                {link.name}
+              </a>
+            ))}
           </div>
           <div className="flex flex-col gap-xs">
             <p className="font-bold">Kontakt</p>
             <a
               className="link-underline-light w-fit"
-              href="mailto:linajsvard@hotmail.com">
+              aria-label="Skicka e-post till Lina Svärd"
+              href={contactInfo.email}>
               Mail
             </a>
             <a
               className="link-underline-light w-fit"
-              href="https://www.linkedin.com/in/lina-sv%C3%A4rd-b04a12109/"
+              aria-label="Besök Lina Svärds LinkedIn-profil"
+              href={contactInfo.linkedin}
               target="_blank"
               rel="noopener noreferrer">
               LinkedIn
             </a>
             <a
               className="link-underline-light w-fit"
-              href="https://github.com/linasvard"
+              aria-label="Besök Lina Svärds GitHub-profil"
+              href={contactInfo.github}
               target="_blank"
               rel="noopener noreferrer">
               GitHub
@@ -56,7 +57,7 @@ const Footer = () => {
           &copy; {new Date().getFullYear()} Lina Svärd. All rights reserved.
         </p>
         <div>
-          <CvIcon className="hover:bg-light hover:text-dark transition-colors duration-200 cv-btn py-xs px-6 bg-accent text-dark" />
+          <CvIcon className="hover:bg-light hover:text-dark transition-colors rounded-full duration-200 py-xs px-6 bg-accent text-dark" />
         </div>
       </div>
     </footer>

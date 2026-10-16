@@ -22,11 +22,15 @@ export const fadeInRight = (delay = 0): MotionProps => ({
 });
 
 export const rotateRight = (): MotionProps => ({
-    whileHover: { rotate: 6, scale: 1 },
-    transition: { duration: 0.45, ease: "easeInOut" }
+    whileHover: { 
+      rotate: 6,
+      transition: { duration: 0.45, ease: "easeInOut" }
+    }
 });
 
 export const rotateLeft = (): MotionProps => ({
-    whileHover: { rotate: -6, scale: 1 },
-    transition: { duration: 0.45, ease: "easeInOut" }
+    whileHover: { 
+      rotate: -6,
+      transition: { duration: 0.45, ease: "easeInOut" },
+    }   
 });

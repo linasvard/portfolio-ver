@@ -4,13 +4,8 @@ import NavbarLink from '../ui/NavbarLink';
 import { useState } from 'react';
 import Logo from '../../assets/images/lina-logo.png';
 import HamburgerIcon from '../../assets/images/hamburger-icon.png';
+import { navbarLinks } from '../../data/navigation';
 
-
-const navbarLinks = [
-  { name: 'Projekt', href: '#projects' },
-  { name: 'Om mig', href: '#about' },
-  { name: 'Kontakt', href: '#contact' },
-];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +31,7 @@ const Navbar = () => {
               </NavbarLink>
             ))}
           </ul>
-          <div className="social-icons hidden md:flex">
+          <div className="hidden md:flex">
             <CvIcon />
           </div>
           <button

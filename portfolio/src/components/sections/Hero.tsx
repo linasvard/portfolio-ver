@@ -1,6 +1,5 @@
 
 import Underline from "../ui/Underline";
-import "../../assets/styles/Hero.css"
 import { motion } from "motion/react";
 import { fadeInLeft } from "../../utils/animations";
 import IllustrationsHero from "../ui/IllustrationsHero";

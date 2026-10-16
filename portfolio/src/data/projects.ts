@@ -15,7 +15,7 @@ export type Project = {
     demo: string;
 }
 
-export const projects = [
+export const projects: Project[] = [
     {
         id: 1,
         image: makeItPop,
