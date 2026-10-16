@@ -51,9 +51,48 @@ npm run dev
 
 ## Ändringar mot Figma-skissen
 
+Som med vilket annat projekt så dyker det upp hinder eller problem som man måste ta sig igenom och hitta alternativa lösningar till. Antingen så handlar det om att kompromissa eller så får man helt enkelt stryka och tänka om. Här nedan listar jag de ändrar jag gjort på grund av logik eller design.
+
+### Har blivit utbytt helt 
+
+#### Projektkortslayout
+
+![Bild visande produktkorten som dem såg ut i skissen](portfolio/public/produktkor-v1.png)
+*Före* ⬆️
+
+![Bild visande produktkorten som dem ser ut nu](portfolio/public/produktkort.png)
+*Efter* ⬆️
+
+**Här hade jag som plan** att använda mig av hover på desktop för att få knapparna att synas och vid mobilläge ha dem synliga under bilden. Detta hade jag en större del av tiden medan jag jobbade på projektet. Men ju mer jag jobbade med det och ju närmare jag kom ett färdigt projekt började det skava rent designmässigt. Det kändes för rörigt med de stora bilderna tillsammans med taggarna och texten. Raderna sträckte sig för långt och blev allt svårare att läsa. 
+
+Jag bestämde mig därför att ta bort all text under bilden och ersätta den med enbart en titel. Taggar, beskrivning och länkar tillsammans med rubrik flyttades till en overlay som aktiveras vid hover i desktop-läge medan de flyttas ut och syns under bilden i tablet- och mobilläge.
+
+### Det jag modifierat
+
+#### Typsnitt
+I min skiss i Figma valde jag att använda en sans seriff som heter *Host Grotesk* som funkar väldigt bra med text i webben. Som komplement hade jag ett kodliknande typsnitt som heter *Fira Code* som skulle agera som en stand in för att bryta mot den enkla Host Grotesk. 
+
+När jag började koda valde jag istället att använda ett serif-liknande typsnitt vid namn *Jovie* och ett geometriskt sans-serif typsnitt vid namn *Sofia Pro*. Jovie fick bli mitt primära typsnitt för att leka på den lekfullheten jag skrev om tidigare, och för längre texter och som accent-typsnitt fick Sofia Pro hoppa in.
+
+#### Navbarelement
+
+![Skärmdump av navbar i Figma](portfolio/public/navbar1.jpeg)
+![Skärmdump av den färdigställda navbaren](portfolio/public/navbar2.jpeg)
+
+I min skiss i Figma (överst) la jag till länkar och ikoner för mina sociala kanaler så som GitHub och LinkedIn tillsammans med en CV-länk. I stället behöll jag CV-länken och gjorde den till en knapp och flyttade ner mina länkar till kontakt. Detta för att göra det renare i navbaren.
+
+### Som har uteblivit
+
+#### Carousel
+
+![Skärmavbild på en Figma-skiss](portfolio/public/carousel.jpeg)
+
+I min skiss kan man se en carousel ovanför mina projekt. Denna var tillför att lyfta fram mina främsta projekt, dem jag är stoltast över. Denna la jag till som ett tillägg utöver kravspecifikationen i mån av tid. I slutet fanns det heller ingen tid till att göra den, men kommer att läggas till i framtiden. 
 
 
-## Reflektion
+
+
+## Reflektion 
 
 ### Komponentarkitektur
 
