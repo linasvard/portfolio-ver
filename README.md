@@ -91,10 +91,12 @@ I min skiss kan man se en carousel ovanför mina projekt. Denna var tillför att
 
 
 
-
 ## Reflektion 
 
 ### Komponentarkitektur
+Komponenterna är uppdelade i tre mappar. Layout är det yttre skalet med Navbar och Footer, och sections är sidans olika delar: Hero, Projects, About och Contact. Mindre delar som sektionerna består av, till exempel kontaktformuläret och projektkorten, ligger i ui.
+
+Det som återanvänds ligger separat. SVG-ikonerna är egna .tsx-komponenter, så att färg och storlek kan styras med props. Typerna för kontaktformuläret ligger i en egen fil, eftersom både FormField och ContactForm använder dem. FormField ersatte fem nästan identiska fält och får allt den behöver via props från ContactForm. På samma sätt renderas ProjectCard en gång per projekt, med olika data via props.
 
 ### State
 

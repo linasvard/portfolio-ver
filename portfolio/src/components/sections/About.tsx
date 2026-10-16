@@ -1,7 +1,7 @@
 import AboutMeImg from "../../assets/images/lina-polaroid.png";
 import { motion } from "motion/react"
 import UnderlineAbout from "../ui/UnderlineAbout";
-import Skills from "./Skills";
+import Skills from "../ui/Skills";
 import { fadeInLeft, fadeInRight, rotateRight } from "../../utils/animations";
 
 const About = () => {
