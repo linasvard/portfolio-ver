@@ -25,7 +25,7 @@ const Projects = () => {
   return (
     <section className="projects max-width padding-overall" id="projects">
       <motion.h2 className="text-heading" {...fadeInUp(0.1)}>
-        All my works
+        Senaste projekten
       </motion.h2>
       <div className="flex flex-wrap font-sans cursor-pointer gap-x-md gap-y-sm mt-sm mb-md w-full justify-start text-lg font-medium">
         <motion.button
