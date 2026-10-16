@@ -56,7 +56,7 @@ const Footer = () => {
           &copy; {new Date().getFullYear()} Lina Svärd. All rights reserved.
         </p>
         <div>
-          <CvIcon className="hover:bg-light hover:text-dark transition-colors duration-200 cv-btn py-xs px-6 bg-accent text-dark" />
+          <CvIcon className="hover:bg-light hover:text-dark transition-colors rounded-full duration-200 py-xs px-6 bg-accent text-dark" />
         </div>
       </div>
     </footer>
