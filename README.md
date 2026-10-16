@@ -100,6 +100,17 @@ Det som återanvänds ligger separat. SVG-ikonerna är egna .tsx-komponenter, s�
 
 ### State
 
+Projektet använder state på tre ställen: filtrering i Projects, formuläret i ContactForm och mobilmenyn i Navbar. Selected-statet ligger i Projects, eftersom det är filterknapparna och projektlistan som behöver veta vilka taggar som är valda. Alla valda taggar sparas i en array, och med hjälp av spread eller filter skapas en ny array när en tagg läggs till eller tas bort. En ny array behövs eftersom React jämför det gamla och det nya värdet, och annars inte märker att något har ändrats. Vid varje rendering räknas den filtrerade listan fram i stället för att sparas i ett state. Den kan alltid räknas fram från projekten och de valda taggarna, så ett eget state skulle bara ge samma information på två ställen. Filtreringen använder .some(), vilket betyder att den letar igenom varje projekts kategorier, och om den hittar minst en av de valda taggarna blir det true. Ett projekt behöver alltså inte matcha alla valda taggar, vilket känns mer naturligt för besökaren.
+Fälten i kontaktformuläret utgår från samma state-objekt, vilket gör att en enda handleChange räcker. FormField har inget eget state, utan visar bara det den får via props. Mobilmenyn använder en isOpen som ligger i Navbar, eftersom det är den enda komponenten som använder den.
+
+
 ### Vad jag skulle göra annorlunda
 
+Om det är något jag hade gjort annorlunda med denna uppgift så är det att planera innehållet och komponenterna mer djupgående. Gjorde en analys av min skiss första dagen och planerade efter den men insåg när jag började jobba att planeringen jag gjorde hade kunnat utvecklats. FormField är tydligt exempel på detta, inget jag planerat för men insåg att det blev väldigt repetitivt. 
+
 ### AI-verktyg
+
+
+Jag har använt **Claude** som stöd under arbetet. Claude har granskat koden mot kraven, förklarat begrepp relaterat till state och layout-animationer, och guidat mig steg för steg genom refaktoreringar som exempelvis FormField. Claude har också gett feedback på README-texten. Koden och texterna har jag skrivit själv.
+
+![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white)
