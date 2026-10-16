@@ -18,7 +18,7 @@ const About = () => {
                 <p className="mt-md mx-1 md:text-big-p text-about-mobile">
                     Jag heter Lina och är en utbildad grafisk designer och frontendstudent som är bosatt i Göteborg, Sverige. Lever i gränslandet mellan design och utveckling och brinner lite extra för tillgänglighet.
                 </p>
-                <p className="text-md mt-md font-sans">Kontakta mig gärna så kan vi diskuterar jag mer än gärna frontend, design eller varför inte båda?</p>
+                <p className="text-md mt-md font-sans">Kontakta mig gärna så diskuterar jag mer än gärna frontend, design eller varför inte båda?</p>
             </motion.div>
             <motion.div 
             className="flex justify-center h-full md:justify-center lg:justify-center sm:max-w-400 md:max-w-300 lg:max-w-200"
