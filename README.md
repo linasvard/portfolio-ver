@@ -14,9 +14,44 @@
 ## Om projektet
 ![Screenshot av projekt](portfolio/public/screenshot_desktop.jpeg)
 
+*Det här är en portfolio byggd som en React SPA* i syfte för LIA-sök och som ett sätt att visa projekt för framtida arbetsgivare. Den innehåller en Hero, Footer och Navbar med länkar till sektionerna: **Projekt**, **Om mig** och **Kontakt**. Sektionen **Projekt** har även en filtrering där du kan filtrera projekt i olika kategorier, där du kan välja flera samtidigt och längre ner har du ett kontaktformulär med validering kopplat till *Formspree*.
+
+Denna portfolio ger mig också möjligheten att visa de kunskaper jag har inom grafisk design och frontend utveckling. Det har jag försökt visa i den visuella delen med hjälp av illustrationer, ett lekfullt typsnitt och animeringar. Det ska inte bara vara en stel portfolio som visar projekt, den ska även spegla mig. 
+
+Portfolion är byggd som en inlämningsuppgift men kommer precis som jag, att utvecklas med tiden.
+
 ## Kör projektet lokalt
 
+**1. Klona repot**
+
+```bash
+git clone https://github.com/linasvard/portfolio-ver.git
+```
+
+**2. Gå in i projektmappen**
+
+```bash
+cd portfolio-ver/portfolio
+```
+
+**3. Installera dependencies**
+
+```bash
+npm install
+```
+
+**4. Starta utvecklingsservern**
+
+```bash
+npm run dev
+```
+
+**5. Öppna `http://localhost:5173/` i webbläsaren**
+
+
 ## Ändringar mot Figma-skissen
+
+
 
 ## Reflektion
 
