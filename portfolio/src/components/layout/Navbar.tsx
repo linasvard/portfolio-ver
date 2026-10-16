@@ -36,7 +36,7 @@ const Navbar = () => {
               </NavbarLink>
             ))}
           </ul>
-          <div className="social-icons hidden md:flex">
+          <div className="hidden md:flex">
             <CvIcon />
           </div>
           <button

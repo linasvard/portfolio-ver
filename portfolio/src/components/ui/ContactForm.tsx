@@ -162,14 +162,14 @@ const ContactForm = () => {
                 animate={{ x: 0, opacity: 1 }}
                 exit={{ x: '-100%', opacity: 0 }}
                 transition={{ type: 'spring', stiffness: 300, damping: 30 }}
-                className="relative z-0 text-dark ml-sm border border-dark rounded-xl bg-light p-2 whitespace-nowrap">
+                className="relative z-0 text-light ml-sm border border-dark bg-success rounded-full bg-light px-4 py-2 whitespace-nowrap">
                 Meddelandet har skickats!
               </motion.span>
             )}
           </AnimatePresence>
         </div>
 
-        {sendError && <p className="text-red-500">{sendError}</p>}
+        {sendError && <p className="color-danger">{sendError}</p>}
       </div>
     </form>
   );

@@ -17,7 +17,6 @@
   --text-about: 3.7rem;
   --text-subheading: 1.8rem;
   --text-body: 1rem;
-  --text-caption: 0.875rem;
   --text-subtitle: 1.2rem;
   --text-about-mobile: 1.8rem;
 
@@ -164,20 +163,12 @@ h2 {
   font-weight: var(--font-weight-medium);
 }
 
-section,
-.contact {
-
+section {
   width: 100%;
 }
 
 button {
   cursor: pointer;
-}
-
-.highlight {
-  font-family: var(--font-sans-serif);
-  font-size: 2rem;
-
 }
 
 .main-heading {
