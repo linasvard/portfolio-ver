@@ -18,10 +18,12 @@ const Contact = () => {
         <motion.div {...fadeInLeft(0.1)} className="flex flex-col gap-sm lg:max-w-[500px] max-w-full">
           <div className="flex flex-col gap-sm">
             <h2 className="font-bold text-heading">Let's get in touch</h2>
-            <p>
+            <p className="font-sans">
               Använd gärna formuläret eller släng iväg ett meddelande på
-              LinkedIn eller mejlen, eller varför inte alla tre?
+              LinkedIn eller mejlen, eller varför inte alla tre? :)
             </p>
+            <p className='italic'>
+            Så hör jag av mig så snart jag kan.</p>
           </div>
           <div>
             <img
