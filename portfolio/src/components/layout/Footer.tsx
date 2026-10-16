@@ -1,4 +1,5 @@
 import CvIcon from '../../assets/icons/CvIcon';
+import { contactInfo } from '../../data/contact';
 
 const Footer = () => {
   return (
@@ -31,19 +32,22 @@ const Footer = () => {
             <p className="font-bold">Kontakt</p>
             <a
               className="link-underline-light w-fit"
-              href="mailto:linajsvard@hotmail.com">
+              aria-label="Skicka e-post till Lina Svärd"
+              href={contactInfo.email}>
               Mail
             </a>
             <a
               className="link-underline-light w-fit"
-              href="https://www.linkedin.com/in/lina-sv%C3%A4rd-b04a12109/"
+              aria-label="Besök Lina Svärds LinkedIn-profil"
+              href={contactInfo.linkedin}
               target="_blank"
               rel="noopener noreferrer">
               LinkedIn
             </a>
             <a
               className="link-underline-light w-fit"
-              href="https://github.com/linasvard"
+              aria-label="Besök Lina Svärds GitHub-profil"
+              href={contactInfo.github}
               target="_blank"
               rel="noopener noreferrer">
               GitHub

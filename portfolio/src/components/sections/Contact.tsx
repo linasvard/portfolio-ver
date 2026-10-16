@@ -3,6 +3,7 @@ import MailIcon from '../../assets/icons/mail-icon.png';
 import LinkedinIcon from '../../assets/icons/linkedin-icon.png';
 import { motion } from 'motion/react';
 import { fadeInLeft, fadeInRight, rotateLeft, rotateRight } from '../../utils/animations';
+import  { contactInfo } from '../../data/contact';
 
 import '../../assets/styles/Contact.css';
 import ContactForm from '../ui/ContactForm';
@@ -34,12 +35,12 @@ const Contact = () => {
             <address className="grid grid-cols-2 gap-sm mt-[-10px] items-center">
               <motion.a 
               {...rotateLeft()}
-              href="mailto:linajsvard@hotmail.com">
+              href={contactInfo.email}>
                 <img className="max-h-55 w-auto object-contain" src={MailIcon} alt="Email" />
               </motion.a>
               <motion.a
                 {...rotateRight()}
-                href="https://www.linkedin.com/in/lina-sv%C3%A4rd-b04a12109/"
+                href={contactInfo.linkedin}
                 target="_blank"
                 rel="noopener noreferrer">
                 <img
