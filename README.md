@@ -8,7 +8,7 @@
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
 
-[**🔗 Demo**](https://www.linasvard.vercel.app) /
+[**🔗 Demo**](https://linasvard.vercel.app) /
 [**Figma**](https://www.figma.com/design/cURvS7YT9FmF4VKFyR1IrQ/Portfolio?node-id=0-1&t=MWnSAvdh3zQaKgUu-1) 
 
 ## Om projektet
