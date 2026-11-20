@@ -19,16 +19,6 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: 1,
-    image: makeItPop,
-    title: 'Make It Pop!',
-    description:
-      'Stort, färgglatt och fullt av rörelse. Make It Pop! är en SVG-animation där tre ord flyger in över en gradientbakgrund. Ett kreativt skolprojekt där jag fick leka med GSAP. Byggt med Vanilla JavaScript utan ramverk.',
-    categories: ['Front end', 'GSAP', 'SVG', 'Animation'],
-    github: 'https://github.com/linasvard/make-it-pop',
-    demo: 'https://linasvard.github.io/make-it-pop/',
-  },
-  {
-    id: 2,
     image: questlogImage,
     title: 'Questlog',
     description:
@@ -38,7 +28,7 @@ export const projects: Project[] = [
     demo: 'https://questlog-tracker.vercel.app/',
   },
   {
-    id: 3,
+    id: 2,
     image: theLibrary,
     title: 'the library.',
     description:
@@ -46,6 +36,16 @@ export const projects: Project[] = [
     categories: ['Fullstack', 'MongoDB', 'API', 'Express'],
     github: 'https://github.com/linasvard/the-library',
     demo: 'https://this-is-the-library.vercel.app/',
+  },
+  {
+    id: 3,
+    image: makeItPop,
+    title: 'Make It Pop!',
+    description:
+      'Stort, färgglatt och fullt av rörelse. Make It Pop! är en SVG-animation där tre ord flyger in över en gradientbakgrund. Ett kreativt skolprojekt där jag fick leka med GSAP. Byggt med Vanilla JavaScript utan ramverk.',
+    categories: ['Front end', 'GSAP', 'SVG', 'Animation'],
+    github: 'https://github.com/linasvard/make-it-pop',
+    demo: 'https://linasvard.github.io/make-it-pop/',
   },
   {
     id: 4,
