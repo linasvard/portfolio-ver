@@ -1,11 +1,10 @@
-import CvIcon from '../../assets/icons/CvIcon';
 import { contactInfo } from '../../data/contact';
 import { navbarLinks } from '../../data/navigation';
 
 const Footer = () => {
   return (
     <footer className="bg-dark text-light">
-      <div className="flex max-width padding-overall flex-col md:gap-md md:flex-row justify-between gap-lg max-width mx-auto">
+      <div className="flex padding-overall flex-col md:gap-md md:flex-row justify-between gap-lg max-width mx-auto">
         <div className="flex flex-col gap-md max-w-70">
           <div>
             <p className="font-bold">Based in:</p>
@@ -20,7 +19,10 @@ const Footer = () => {
           <div className="flex flex-col gap-xs">
             <p className="font-bold">Lina Svärd</p>
             {navbarLinks.map((link) => (
-              <a key={link.href} className="link-underline-light w-fit" href={link.href}>
+              <a
+                key={link.href}
+                className="link-underline-light w-fit"
+                href={link.href}>
                 {link.name}
               </a>
             ))}
@@ -52,12 +54,23 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="mt-md max-width padding-overall pt-0 flex flex-col gap-md md:flex-row justify-between items-center text-left">
+      <div className="mt-md max-width padding-overall pt-0 flex flex-col gap-md md:flex-row justify-between items-center md:text-left text-center">
         <p className="text-light/50">
           &copy; {new Date().getFullYear()} Lina Svärd. All rights reserved.
         </p>
+
         <div>
-          <CvIcon className="hover:bg-light hover:text-dark transition-colors rounded-full duration-200 py-xs px-6 bg-accent text-dark" />
+          <p className="text-light/50">
+            Vill du se hur hemsidan är byggd? Kolla in koden på{' '}
+            <a
+              className="link-underline-light"
+              href={contactInfo.github}
+              target="_blank"
+              rel="noopener noreferrer">
+              GitHub
+            </a>
+            .
+          </p>
         </div>
       </div>
     </footer>
