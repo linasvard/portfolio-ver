@@ -64,7 +64,7 @@ const Footer = () => {
             Vill du se hur hemsidan är byggd? Kolla in koden på{' '}
             <a
               className="link-underline-light"
-              href={contactInfo.github}
+              href="https://github.com/linasvard/portfolio-ver"
               target="_blank"
               rel="noopener noreferrer">
               GitHub
